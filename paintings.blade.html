@@ -7,6 +7,8 @@
         <title>Astratta | Home</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
@@ -16,7 +18,7 @@
     <body>
         <div class="container-fluid px-0 bg-white">
             <!-- navbar start -->
-            <nav class="navbar navbar-expand-lg bg-white">
+            <nav class="navbar navbar-expand-lg bg-white sticky-top">
                 <div class="container">
                     <a class="navbar-brand" href="#"><img class="nav-logo" src="assets/images/logo.jpg" alt="" /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,10 +33,10 @@
                                 <a class="nav-links text-decoration-none" href="paintings.blade.html">Paintings</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-links text-decoration-none" href="javascript:void();">Artists</a>
+                                <a class="nav-links text-decoration-none" href="artists.blade.html">Artists</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-links text-decoration-none" href="javascript:void();">About</a>
+                                <a class="nav-links text-decoration-none" href="about.blade.html">About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-links text-decoration-none" href="contact.blade.html">Contact</a>
@@ -48,6 +50,148 @@
                 </div>
             </nav>
             <!-- navbar end -->
+
+            <!-- breadcrumb -->
+            <div class="search-breadcrumb container-fluid px-0">
+                <div class="breadcrumb d-flex justify-content-center align-items-center">
+                    <div>
+                        <h1>Search Paintings</h1>
+                        <form action="" method="GET">
+                            <div class="input-group">
+                                <input type="text" class="form-control shadow-none border border-right-0" placeholder="Search Here..." aria-describedby="search-button" />
+                                <button class="btn btn-light" type="submit" id="search-button">
+                                    <img src="assets/images/search-icon.png" alt="" />
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- breadcrumb -->
+
+            <!-- paintings section -->
+            <div class="container section2-container-2">
+                <div class="row justify-content-lg-between justify-content-md-between justify-content-center mx-auto">
+                    <div class="col-md-4 px-lg-0">
+                        <a href="view-product.blade.html">
+                            <img class="w-100 p-3" src="assets/images/best-selling/bs1.png" alt="" />
+                            <h3>Lorem Ipsum is simply dummy text of the printing and</h3>
+                            <p class="my-0">$5000</p>
+                            <div class="d-inline-flex align-items-center justify-content-end buy-now">
+                                <small>Buy Now</small>
+                                <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 px-lg-0">
+                        <a href="view-product.blade.html">
+                            <img class="w-100 p-3" src="assets/images/best-selling/bs2.png" alt="" />
+                            <h3>Why do we use it</h3>
+                            <p class="my-0">$5000</p>
+                            <div class="d-inline-flex align-items-center justify-content-end buy-now">
+                                <small>Buy Now</small>
+                                <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 px-lg-0">
+                        <a href="view-product.blade.html">
+                            <img class="w-100 p-3" src="assets/images/best-selling/bs3.png" alt="" />
+                            <h3>Lorem Ipsum is simply dummy text of the printing and</h3>
+                            <p class="my-0">$5000</p>
+                            <div class="d-inline-flex align-items-center justify-content-end buy-now">
+                                <small>Buy Now</small>
+                                <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 px-lg-0">
+                        <a href="view-product.blade.html">
+                            <img class="w-100 p-3" src="assets/images/best-selling/bs1.png" alt="" />
+                            <h3>Lorem Ipsum is simply dummy text of the printing and</h3>
+                            <p class="my-0">$5000</p>
+                            <div class="d-inline-flex align-items-center justify-content-end buy-now">
+                                <small>Buy Now</small>
+                                <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 px-lg-0">
+                        <a href="view-product.blade.html">
+                            <img class="w-100 p-3" src="assets/images/best-selling/bs2.png" alt="" />
+                            <h3>Why do we use it</h3>
+                            <p class="my-0">$5000</p>
+                            <div class="d-inline-flex align-items-center justify-content-end buy-now">
+                                <small>Buy Now</small>
+                                <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 px-lg-0">
+                        <a href="view-product.blade.html">
+                            <img class="w-100 p-3" src="assets/images/best-selling/bs3.png" alt="" />
+                            <h3>Lorem Ipsum is simply dummy text of the printing and</h3>
+                            <p class="my-0">$5000</p>
+                            <div class="d-inline-flex align-items-center justify-content-end buy-now">
+                                <small>Buy Now</small>
+                                <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 px-lg-0">
+                        <a href="view-product.blade.html">
+                            <img class="w-100 p-3" src="assets/images/best-selling/bs1.png" alt="" />
+                            <h3>Lorem Ipsum is simply dummy text of the printing and</h3>
+                            <p class="my-0">$5000</p>
+                            <div class="d-inline-flex align-items-center justify-content-end buy-now">
+                                <small>Buy Now</small>
+                                <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 px-lg-0">
+                        <a href="view-product.blade.html">
+                            <img class="w-100 p-3" src="assets/images/best-selling/bs2.png" alt="" />
+                            <h3>Why do we use it</h3>
+                            <p class="my-0">$5000</p>
+                            <div class="d-inline-flex align-items-center justify-content-end buy-now">
+                                <small>Buy Now</small>
+                                <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 px-lg-0">
+                        <a href="view-product.blade.html">
+                            <img class="w-100 p-3" src="assets/images/best-selling/bs3.png" alt="" />
+                            <h3>Lorem Ipsum is simply dummy text of the printing and</h3>
+                            <p class="my-0">$5000</p>
+                            <div class="d-inline-flex align-items-center justify-content-end buy-now">
+                                <small>Buy Now</small>
+                                <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- paintings section -->
 
             <!-- footer start -->
             <div class="footer">
@@ -116,5 +260,6 @@
 </html>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"></script>

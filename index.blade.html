@@ -7,6 +7,8 @@
         <title>Astratta | Home</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
@@ -16,7 +18,7 @@
     <body>
         <div class="container-fluid px-0 bg-white">
             <!-- navbar start -->
-            <nav class="navbar navbar-expand-lg bg-white">
+            <nav class="navbar navbar-expand-lg bg-white sticky-top">
                 <div class="container">
                     <a class="navbar-brand" href="#"><img class="nav-logo" src="assets/images/logo.jpg" alt="" /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,10 +33,10 @@
                                 <a class="nav-links text-decoration-none" href="paintings.blade.html">Paintings</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-links text-decoration-none" href="javascript:void();">Artists</a>
+                                <a class="nav-links text-decoration-none" href="artists.blade.html">Artists</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-links text-decoration-none" href="javascript:void();">About</a>
+                                <a class="nav-links text-decoration-none" href="about.blade.html">About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-links text-decoration-none" href="contact.blade.html">Contact</a>
@@ -62,7 +64,7 @@
                                         <p class="my-0 text-white">Paintings</p>
                                     </div>
                                     <br />
-                                    <div class="artist d-inline-flex align-items-center">
+                                    <div class="total-artist d-inline-flex align-items-center">
                                         <div class="d-inline-flex">
                                             <img src="assets/images/artist/1.png" alt="" />
                                             <img src="assets/images/artist/2.png" alt="" />
@@ -77,18 +79,18 @@
                         <div class="col-md-6">
                             <div class="art-demo-container">
                                 <div class="row justify-content-end">
-                                    <div class="col-md-5 first-col">
+                                    <div class="col-md-4 first-col">
                                         <div class="row justify-content-end">
-                                            <img class="col-md-12 px-0 art-demo" src="assets/images/art/art1.png" alt="" />
-                                            <img class="col-md-12 px-0 art-demo" src="assets/images/art/art2.png" alt="" />
-                                            <img class="col-md-12 px-0 art-demo" src="assets/images/art/art3.png" alt="" />
+                                            <img class="col-md-12 art-demo" src="assets/images/art/art1.png" alt="" />
+                                            <img class="col-md-12 art-demo" src="assets/images/art/art2.png" alt="" />
+                                            <img class="col-md-12 art-demo" src="assets/images/art/art3.png" alt="" />
                                         </div>
                                     </div>
-                                    <div class="col-md-5 second-col">
-                                        <div class="row justify-content-center">
-                                            <img class="col-md-12 px-0 art-demo" src="assets/images/art/art3.png" alt="" />
-                                            <img class="col-md-12 px-0 art-demo" src="assets/images/art/art1.png" alt="" />
-                                            <img class="col-md-12 px-0 art-demo" src="assets/images/art/art2.png" alt="" />
+                                    <div class="col-md-4 second-col">
+                                        <div class="row justify-content-end">
+                                            <img class="col-md-12 art-demo" src="assets/images/art/art3.png" alt="" />
+                                            <img class="col-md-12 art-demo" src="assets/images/art/art1.png" alt="" />
+                                            <img class="col-md-12 art-demo" src="assets/images/art/art2.png" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -98,6 +100,197 @@
                 </div>
             </div>
             <!-- section 1 end -->
+
+            <!-- section 2 start -->
+            <div class="section2">
+                <div class="container section2-container-1">
+                    <div class="row justify-content-lg-between justify-content-center justify-content-md-between mx-auto">
+                        <div class="col-md-4">
+                            <img src="assets/images/art/demo1.png" alt="" />
+                        </div>
+                        <div class="col-md-4">
+                            <img src="assets/images/art/demo2.png" alt="" />
+                        </div>
+                        <div class="col-md-4">
+                            <img src="assets/images/art/demo3.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="container section2-container-2">
+                    <h2>Best Selling</h2>
+                    <div class="row justify-content-lg-between justify-content-md-between justify-content-center mx-auto">
+                        <div class="col-md-4 px-lg-0">
+                            <a href="">
+                                <img class="w-100 p-3" src="assets/images/best-selling/bs1.png" alt="" />
+                                <h3>Lorem Ipsum is simply dummy text of the printing and</h3>
+                                <p class="my-0">$5000</p>
+                                <div class="d-inline-flex align-items-center justify-content-end buy-now">
+                                    <small>Buy Now</small>
+                                    <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 px-lg-0">
+                            <a href="">
+                                <img class="w-100 p-3" src="assets/images/best-selling/bs2.png" alt="" />
+                                <h3>Why do we use it</h3>
+                                <p class="my-0">$5000</p>
+                                <div class="d-inline-flex align-items-center justify-content-end buy-now">
+                                    <small>Buy Now</small>
+                                    <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 px-lg-0">
+                            <a href="">
+                                <img class="w-100 p-3" src="assets/images/best-selling/bs3.png" alt="" />
+                                <h3>Lorem Ipsum is simply dummy text of the printing and</h3>
+                                <p class="my-0">$5000</p>
+                                <div class="d-inline-flex align-items-center justify-content-end buy-now">
+                                    <small>Buy Now</small>
+                                    <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 px-lg-0">
+                            <a href="">
+                                <img class="w-100 p-3" src="assets/images/best-selling/bs1.png" alt="" />
+                                <h3>Lorem Ipsum is simply dummy text of the printing and</h3>
+                                <p class="my-0">$5000</p>
+                                <div class="d-inline-flex align-items-center justify-content-end buy-now">
+                                    <small>Buy Now</small>
+                                    <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 px-lg-0">
+                            <a href="">
+                                <img class="w-100 p-3" src="assets/images/best-selling/bs2.png" alt="" />
+                                <h3>Why do we use it</h3>
+                                <p class="my-0">$5000</p>
+                                <div class="d-inline-flex align-items-center justify-content-end buy-now">
+                                    <small>Buy Now</small>
+                                    <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 px-lg-0">
+                            <a href="">
+                                <img class="w-100 p-3" src="assets/images/best-selling/bs3.png" alt="" />
+                                <h3>Lorem Ipsum is simply dummy text of the printing and</h3>
+                                <p class="my-0">$5000</p>
+                                <div class="d-inline-flex align-items-center justify-content-end buy-now">
+                                    <small>Buy Now</small>
+                                    <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container section2-container-3">
+                    <h2>Meet Our Top Artists</h2>
+                    <div class="artist-loop owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="col-md-12 d-flex justify-content-center">
+                                <div>
+                                    <img src="assets/images/top-artist/ta1.png" alt="" />
+                                    <p class="my-0">Jean Garrett</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-12 d-flex justify-content-center">
+                                <div>
+                                    <img src="assets/images/top-artist/ta2.png" alt="" />
+                                    <p class="my-0">Arnold Banks</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-12 d-flex justify-content-center">
+                                <div>
+                                    <img src="assets/images/top-artist/ta3.png" alt="" />
+                                    <p class="my-0">Sherman Mitchell</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-12 d-flex justify-content-center">
+                                <div>
+                                    <img src="assets/images/top-artist/ta4.png" alt="" />
+                                    <p class="my-0">Andrea Moore</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row container mx-auto">
+                    <div class="container cta-section bg-white d-flex align-items-center">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                                <div class="d-inline-flex align-items-center">
+                                    <a href="" class="start-selling-link">Start selling your paintings</a>
+                                    <p class="my-0 text-dark">Paintings</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- blog site -->
+            <div class="container blog-site">
+                <h1>Read our latest blog</h1>
+                <div class="blog-loop owl-carousel owl-theme">
+                    <div class="item">
+                        <a href="javascript:void();" class="text-decoration-none text-dark">
+                            <div class="col-md-12">
+                                <img class="w-100" src="assets/images/blog-demo.png" alt="" />
+                                <p class="author my-0">Designer</p>
+                                <p class="title my-0">Sheri Briggs</p>
+                                <p class="description my-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi, enim, ut aliquam convallis in. Habitasse sollicitudin.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="javascript:void();" class="text-decoration-none text-dark">
+                            <div class="col-md-12">
+                                <img class="w-100" src="assets/images/blog-demo.png" alt="" />
+                                <p class="author my-0">Developer</p>
+                                <p class="title my-0">Sheri Briggs</p>
+                                <p class="description my-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi, enim, ut aliquam convallis in. Habitasse sollicitudin.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="javascript:void();" class="text-decoration-none text-dark">
+                            <div class="col-md-12">
+                                <img class="w-100" src="assets/images/blog-demo.png" alt="" />
+                                <p class="author my-0">Graphic Designer</p>
+                                <p class="title my-0">Sheri Briggs</p>
+                                <p class="description my-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi, enim, ut aliquam convallis in. Habitasse sollicitudin.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- blog site -->
+            <!-- section 2 end -->
 
             <!-- footer start -->
             <div class="footer">
@@ -166,5 +359,65 @@
 </html>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"></script>
+
+<script>
+    jQuery(document).ready(function ($) {
+        $(".artist-loop").owlCarousel({
+            loop: true,
+            margin: 10,
+            responsive: {
+                500: {
+                    items: 1,
+                },
+                800: {
+                    items: 2,
+                },
+                1000: {
+                    items: 3,
+                },
+                1200: {
+                    items: 4,
+                },
+                1300: {
+                    items: 4,
+                },
+                1400: {
+                    items: 4,
+                },
+                1700: {
+                    items: 5,
+                },
+            },
+        });
+        $(".blog-loop").owlCarousel({
+            loop: true,
+            margin: 10,
+            responsive: {
+                500: {
+                    items: 1,
+                },
+                800: {
+                    items: 2,
+                },
+                1000: {
+                    items: 3,
+                },
+                1200: {
+                    items: 3,
+                },
+                1300: {
+                    items: 3,
+                },
+                1400: {
+                    items: 3,
+                },
+                1700: {
+                    items: 3,
+                },
+            },
+        });
+    });
+</script>
