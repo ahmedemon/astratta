@@ -1,9 +1,52 @@
 /* navbar start */
-@media only screen and (min-width: 995px) and (max-width: 2400px) {
-    .navbar{
-        height: 141px;
-    }
+.buy-now-button{
+    text-decoration: none;
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    padding: 15px 40px;
+    gap: 10px;
+    width: 158px;
+    height: 51px;
+    background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%);
 }
+.buy-now-button:hover{
+    color: white;
+    background: linear-gradient(90deg, #B627DC 0%, #FF007D 100%);
+}
+
+.add-to-cart-button{
+    text-decoration: none;
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%);
+    border: 1px solid !important;
+    border-image: linear-gradient(to right, #FF007D, #B627DC) 1 !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    padding: 15px 40px;
+    margin-left: 30px;
+    width: 178px;
+    height: 51px;
+}
+.add-to-cart-button:hover{
+    background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%) !important;
+    -webkit-text-fill-color: white;
+}
+
 .menu {
     padding: 0px;
     gap: 40px;
@@ -203,17 +246,7 @@ textarea{
     letter-spacing: 0em;
     margin-bottom: 24px;
 }
-@media only screen and (min-width: 500px) and (max-width: 995px){
-    .footer .link-section{
-        padding-left: inherit !important;
-    }
-    .footer .contact-section {
-        padding-left: inherit !important;
-    }
-    .social-links {
-        padding-left: 8px !important;
-    }
-}
+
 .footer .link-section{
     padding-left: 130px;
     justify-content: center;
@@ -360,14 +393,7 @@ textarea{
 .section2 .section2-container-1{
     margin: 50px auto !important;
 }
-@media only screen and (min-width: 995px) and (max-width: 2400px) {
-    .section2 .section2-container-1{
-        margin: 96px auto !important;
-    }
-    .section2 .col-md-4 {
-        margin-bottom: auto !important;
-    }
-}
+
 .section2 .section2-container-1 img{
     width: 295px;
     height: 362px;
@@ -727,6 +753,10 @@ textarea{
 /* about section */
 
 /* view product */
+.product-section1 .content{
+    margin: 96px auto !important;
+    height: auto;
+}
 .product-section1 p{
     font-family: 'Montserrat' !important;
     font-style: normal;
@@ -739,7 +769,7 @@ textarea{
     
     margin-bottom: 16px;
 }
-.product-section1 img{
+.product-section1 .title img{
     margin-left: 20px;
 }
 
@@ -769,4 +799,167 @@ textarea{
     line-height: 56px;
     color: #000000;
 }
+.product-section1 .art #main-image{
+    padding: 15px;
+    border: 3px solid black;
+    filter: drop-shadow(-16.1383px 16.1383px 48.415px rgba(0, 0, 0, 0.1));
+    width: 500px;
+    height: 600px;
+}
+
+
+
+.product-section2 .photos-section{
+    height: auto;
+    padding-top: 96px !important; 
+    padding-bottom: 96px !important; 
+}
+.product-section2 .details-section{
+    padding-top: 96px !important; 
+    height: auto;
+}
+.product-section2 .about-paint-section{
+    font-family: 'Montserrat' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+
+    padding-top: 96px !important;  
+}
+
+.product-section2 h1{
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    color: #000000;
+}
+.product-section2 .photos-section a{
+    width: 100%;
+    margin-left: 10px;
+}
+.product-section2 .photos-section img{
+    width: 100%; 
+    height: 175px;
+}
+
+.thumbnails {
+    height: 100px;
+    width: 100px;
+}
+
+.thumbnails:focus img{
+    filter: opacity(50%);
+    border: 1px solid;
+}
+
+.product-section2 .details-section ol{
+    list-style-type: disc;
+}
+
+.product-section2 .about-section {
+    padding-top: 96px !important;
+    padding-bottom: 96px !important;
+}
+.product-section2 .about-section .headings{
+    padding: 60px;
+}
+.product-section2 .about-section .description{
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 60px !important;
+}
+    
+.product-section2 .about-section .description p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 50px !important;
+}
+.product-section2 .about-section .description a{
+    text-decoration: none;
+    font-family: 'Montserrat' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #D14D9D;
+}
+.product-section2 .about-section .description a:hover{
+    color: #831858;
+}
+.product-section2 .about-section .headings h1{
+    font-family: 'Crucial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px; 
+    color: #000000;
+}
+.product-section2 .about-section .headings .info{
+    margin-left: 32px;
+}
+.product-section2 .about-section .headings p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FF6DC5;
+}
+.product-section2 .about-section img{
+    width: 124px !important;
+    height: 124px !important;
+    margin-left: 0px !important;
+}
+
+.product-section3{
+    margin-top: 96px;
+    margin-bottom: 30px;
+}
 /* view product */
+
+
+/* media query */
+@media only screen and (min-width: 995px) and (max-width: 2400px) {
+    .navbar {
+        height: 141px;
+    }
+    .section2 .section2-container-1 {
+        margin: 96px auto !important;
+    }
+
+    .section2 .col-md-4 {
+        margin-bottom: auto !important;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 995px) {
+    .footer .link-section {
+        padding-left: inherit !important;
+    }
+
+    .footer .contact-section {
+        padding-left: inherit !important;
+    }
+
+    .social-links {
+        padding-left: 8px !important;
+    }
+
+    .product-section1 .art #main-image {
+        width: 100%;
+    }
+
+    .product-section2 img{
+        width: 100% !important;
+        margin: auto;
+    }
+}
+/* media query */
