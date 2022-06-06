@@ -18,8 +18,8 @@
     <body>
         <div class="container-fluid px-0 bg-white">
             <!-- navbar start -->
-            <nav class="navbar navbar-expand-lg bg-white sticky-top">
-                <div class="container">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg bg-white sticky-top">
                     <a class="navbar-brand" href="#"><img class="nav-logo" src="assets/images/logo.jpg" alt="" /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -47,8 +47,8 @@
                         </ul>
                         <button class="sign-up-button d-lg-block d-none">Sign up</button>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
             <!-- navbar end -->
 
             <!-- section 1 start -->
@@ -103,7 +103,7 @@
 
             <!-- section 2 start -->
             <div class="section2">
-                <div class="container section2-container-1">
+                <div class="container section2-container-1 px-0">
                     <div class="row justify-content-lg-between justify-content-between justify-content-md-between mx-auto">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4">
                             <img src="assets/images/art/demo1.png" alt="" />
@@ -241,7 +241,7 @@
                 <div class="row container mx-auto">
                     <div class="container cta-section bg-white d-flex align-items-center">
                         <div class="row">
-                            <div class="col-md-5">
+                            <div class="col-md-12">
                                 <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
                                 <div class="d-inline-flex align-items-center">
                                     <a href="" class="start-selling-link">Start selling your paintings</a>
@@ -367,7 +367,7 @@
     jQuery(document).ready(function ($) {
         $(".artist-loop").owlCarousel({
             loop: true,
-            margin: 20,
+            margin: 50,
             responsive: {
                 300: {
                     items: 1,
