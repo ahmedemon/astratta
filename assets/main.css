@@ -244,7 +244,7 @@ textarea{
 
 /* footer */
 .footer{
-    background-color: #F2F2F2;
+    background-color: #F2F2F2; 
 }
 .footer .container{
     padding: 98px 0px;
@@ -400,8 +400,9 @@ textarea{
     width: 231px;
     margin-bottom: 26px !important;
 }
-.art-demo-container{
-    margin-top: -70px;
+.art-demo-container img{
+    width: 480px;
+    height: 800px;
 }
 .second-col{
     margin-top: 95px;
@@ -587,7 +588,7 @@ textarea{
 }
 
 .blog-site .description{
-    text-align: justify;
+    text-align: left;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -1017,6 +1018,19 @@ textarea{
         width: fit-content;
     }
 }
+@media only screen and (min-width: 668px) and (max-width: 995px) {
+    .art-demo-container img {
+        width: -webkit-fill-available;
+        height: auto;
+    }
+    .section1 {
+        height: auto;
+    }
+    .section1 h1{
+        font-size: 20px !important;
+        line-height: inherit !important;
+    }
+}
 @media only screen and (min-width: 360px) and (max-width: 995px) {
     /* home page */
     .section1 {
@@ -1026,7 +1040,10 @@ textarea{
         background-position: center bottom;
         overflow: hidden;
     }
-
+    .art-demo-container img {
+        width: 300px;
+        height: 100%;
+    }
     .section2 .section2-container-1 .col-md-4:nth-child(1) img {
         background: #6DC700 !important;
     }
@@ -1048,6 +1065,17 @@ textarea{
         margin-bottom: 50px;
     }
 
+    .buy-now {
+        margin: 0 !important;
+    }
+
+    .section2-container-2 {
+        margin-bottom: 96px;
+    }
+    .section2-container-2 .painting h3 {
+        height: 60px !important;
+        font-size: 18px;
+    }
 
     .art-demo{
         height: auto;
@@ -1145,5 +1173,10 @@ textarea{
     .about-section1 h1{
         font-size: 30px !important;
     }
+    /* footer section */
+    .footer .container{
+        background-color: #F2F2F2; 
+    }
+    /* footer section */
 }
 /* media query */
