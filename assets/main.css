@@ -449,9 +449,11 @@ textarea{
     font-weight: 500;
     font-size: 36px;
     line-height: 40px;
-    margin-bottom: 64px;
 } 
-.section2-container-2 img{
+.section-heading{
+    margin-bottom: 64px;
+}
+.section2-container-2 .painting img{
     height: 442px;
     margin-bottom: 24px;
 
@@ -512,7 +514,7 @@ textarea{
     margin-bottom: 96px;
     height: 407.3px;
 }
-.section2-container-3 img{
+.section2-container-3 .artist-loop img{
     width: 247.3px;
     background: url(.png);
     border: 10px solid #FFFFFF;
@@ -567,7 +569,6 @@ textarea{
     font-weight: 500;
     font-size: 36px;
     line-height: 40px;
-    margin-bottom: 64px !important;
 }
 
 .blog-site .author{
@@ -1115,7 +1116,7 @@ textarea{
     /* home page */
 
     /* painting page */
-    .section2-container-2 img {
+    .section2-container-2 .painting img {
         height: auto;
     }
     .section2-container-2 .col-lg-4{
