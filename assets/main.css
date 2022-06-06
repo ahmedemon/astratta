@@ -461,7 +461,6 @@ textarea{
     filter: drop-shadow(-10px 10px 30px rgba(0, 0, 0, 0.1));
 }
 .section2-container-2 .row{
-    gap: 24px;
 }
 .section2-container-2 .col-xl-4{
     width: 347px !important;
@@ -473,8 +472,8 @@ textarea{
 }
 
 .section2-container-2 .painting h3{
+    line-height: 32px;
     font-size: 24px;
-    height: 64px !important;
     margin-bottom: 24px !important;
 }
 .section2-container-2 .painting p{
@@ -486,13 +485,17 @@ textarea{
 
     margin-bottom: 24px !important;
 }
-.section2-container-2 small {
-    font-family: 'Montserrat';
-    width: 140px;
-    font-size: 18px;
+.section2-container-2 .buy-now p {
+    font-family: 'Montserrat' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 22px !important;
+    text-align: right !important;
+    margin-bottom: 0px !important;
 }
-.section2-container-2 small:hover {
-    text-decoration: underline;
+.section2-container-2 .buy-now p:hover {
+    text-decoration: underline !important;
 }
 .section2-container-2 a {
     text-decoration: none;
@@ -1073,8 +1076,7 @@ textarea{
     .section2-container-2 {
         margin-bottom: 96px;
     }
-    .section2-container-2 .painting h3 {
-        height: 60px !important;
+    .section2-container-2 .painting h3 { 
         font-size: 18px;
     }
 
