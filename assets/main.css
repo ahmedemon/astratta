@@ -72,14 +72,11 @@
 }
 
 .nav-links {
-    width: 51px;
-    height: 19px;
-
     font-family: 'Crucial' !important;
     font-style: normal;
     font-weight: 500 !important;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 19px;
     letter-spacing: 0.045em;
     color: #000000;
@@ -90,18 +87,47 @@
     height: 39.83px !important;
 }
 .nav-links:hover{
-    text-decoration: underline !important;
-    color: #000000;
+    background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%);
+    border-width: 1px;
+    border-image: linear-gradient(to right, #FF007D, #B627DC) 1 !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 .sign-up-button{
     font-family: 'Crucial' !important;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 21px;
     text-align: center;
 
-    /* G2 */
+    background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%) !important;
+    border-width: 1px;
+    border-image: linear-gradient(to right, #FF007D, #B627DC) 1 !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+    background-clip: text;
+    
+    width: 104px;
+    height: 41px;
+    margin-left: 30px;
+}
+.sign-in-button:focus{
+    box-shadow: 0px 0px 0px 3px #ff007b85 !important;
+}
+.sign-up-button:focus{
+    box-shadow: 0px 0px 0px 3px #ff007b85 !important;
+}
+.sign-up-button:hover{
+    background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%);
+    -webkit-text-fill-color: white;
+}
+.sign-in-button{
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px; 
+    text-align: center;
 
     background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%);
     border-width: 1px;
@@ -110,10 +136,11 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 
-    width: 144px;
+    width: 104px;
     height: 41px;
+    margin-left: 30px;
 }
-.sign-up-button:hover{
+.sign-in-button:hover{
     background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%) !important;
     -webkit-text-fill-color: white;
 }
@@ -354,6 +381,7 @@ textarea{
 
 .section1 .headings1{
     width: 562px;
+    height: 168px;
     font-family: 'Crucial' !important;
     font-style: normal;
     font-weight: 500;
@@ -367,9 +395,19 @@ textarea{
 }
 
 .start-selling-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 304px !important;
+    height: 51px;
+    
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
     color: #F2F2F2;
     text-decoration: none;
-    padding: 15px 40px !important;
 
     background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%);
     border: 1px solid;
@@ -401,7 +439,7 @@ textarea{
     margin-bottom: 26px !important;
 }
 .art-demo-container img{
-    width: 480px;
+    width: 440px;
     height: 800px;
 }
 .second-col{
@@ -420,7 +458,7 @@ textarea{
     filter: drop-shadow(-10px 10px 30px rgba(0, 0, 0, 0.1));
 }
 .section2 .section2-container-1 .col-md-4{
-    padding: 0;
+    padding: 0 !important;
     width: 367px;
     height: 440px;
     margin-bottom: 50px;
@@ -453,8 +491,12 @@ textarea{
 .section-heading{
     margin-bottom: 64px;
 }
+.section-heading h1{
+    color: #000000;
+}
 .section2-container-2 .painting img{
-    height: 442px;
+    width: 347px !important;
+    height: 424px;
     margin-bottom: 24px;
 
     box-shadow: inset 0px 0px 0px 3px #000000, inset 0px 0px 0px 15px #FFFFFF;
@@ -464,17 +506,18 @@ textarea{
 }
 .section2-container-2 .col-xl-4{
     width: 347px !important;
+    margin-bottom: 66px;
 }
 .section2-container-2 .col-lg-4{
     overflow: hidden;
     width: 347px !important;
-    height: auto;
+    height: 606px;
 }
 
 .section2-container-2 .painting h3{
+    width: 347px;
     line-height: 32px;
-    font-size: 24px;
-    margin-bottom: 24px !important;
+    font-size: 24px; 
 }
 .section2-container-2 .painting p{
     font-family: 'Crucial' !important;
@@ -482,17 +525,21 @@ textarea{
     font-weight: 500;
     font-size: 26px;
     line-height: 24px;
-
     margin-bottom: 24px !important;
+    margin-top: 24px !important;
 }
-.section2-container-2 .buy-now p {
+.buy-now{
+    width: 129px;
+    height: 22px;
+}
+.section2-container-2 .buy-now small {
     font-family: 'Montserrat' !important;
     font-style: normal !important;
     font-weight: 400 !important;
     font-size: 18px !important;
     line-height: 22px !important;
+    margin-right: 15px;
     text-align: right !important;
-    margin-bottom: 0px !important;
 }
 .section2-container-2 .buy-now p:hover {
     text-decoration: underline !important;
@@ -507,9 +554,6 @@ textarea{
     font-size: 24px;
     line-height: 32px;
 }
-.buy-now{
-    margin-bottom: 66px;
-}
 /* section 2 */
 
 /* section 3 */
@@ -517,8 +561,7 @@ textarea{
     margin-bottom: 96px;
     height: 407.3px;
 }
-.section2-container-3 .artist-loop img{
-    width: 247.3px;
+.section2-container-3 .artist-loop img{ 
     background: url(.png);
     border: 10px solid #FFFFFF;
     filter: drop-shadow(-5px 5px 30px rgba(0, 0, 0, 0.1));
@@ -535,9 +578,8 @@ textarea{
 }
 .cta-section{
     margin-bottom: 96px;
-}
-.cta-section{
-    height: 449px;
+    width: 1140px !important;
+    height: 449px !important;
     background-image: url(images/CTA.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -575,7 +617,7 @@ textarea{
 }
 
 .blog-site .author{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat' !important;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -592,8 +634,10 @@ textarea{
 }
 
 .blog-site .description{
+    width: 367px;
+    color: #000000;
     text-align: left;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat' !important;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -1035,6 +1079,25 @@ textarea{
         line-height: inherit !important;
     }
 }
+@media only screen and (min-width: 300px) and (max-width: 320px) {
+    .footer{
+        width: fit-content;
+    }
+    .col20{
+        width: 20% !important;
+    }
+    .col60{
+        width: 60% !important;
+    }
+    .col50{
+        width: 50% !important;
+    }
+}
+@media only screen and (min-width: 319px) and (max-width: 476px) {
+    .footer-nav{
+        width: fit-content !important;
+    }
+}
 @media only screen and (min-width: 360px) and (max-width: 995px) {
     /* home page */
     .section1 {
@@ -1106,7 +1169,8 @@ textarea{
         padding: 15px !important;
     }
     .cta-section{
-        height: 300px;
+        height: 300px !important;
+        border: 1px solid whitesmoke;
     }
     .cta-section h1{
         font-size: 30px;
@@ -1118,8 +1182,16 @@ textarea{
     /* home page */
 
     /* painting page */
+    .best-selling-container{
+        width: auto !important;
+    }
+    .section2-container-2 .painting h3{
+        height: auto !important;
+        width: auto !important;
+    }
     .section2-container-2 .painting img {
         height: auto;
+        width: 100% !important;
     }
     .section2-container-2 .col-lg-4{
         width: min-content !important;
