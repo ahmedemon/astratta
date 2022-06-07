@@ -439,7 +439,7 @@ textarea{
     margin-bottom: 26px !important;
 }
 .art-demo-container img{
-    width: 440px;
+    width: 482px;
     height: 800px;
 }
 .second-col{
@@ -489,7 +489,7 @@ textarea{
     line-height: 40px;
 } 
 .section-heading{
-    margin-bottom: 64px;
+    margin-bottom: 57px;
 }
 .section-heading h1{
     color: #000000;
@@ -512,6 +512,9 @@ textarea{
     overflow: hidden;
     width: 347px !important;
     height: 606px;
+}
+.section2-container-2{
+    margin-bottom: 37px !important;
 }
 
 .section2-container-2 .painting h3{
@@ -558,7 +561,7 @@ textarea{
 
 /* section 3 */
 .section2-container-3{
-    margin-bottom: 96px;
+    margin-bottom: 90px;
     height: 407.3px;
 }
 .section2-container-3 .artist-loop img{ 
@@ -622,7 +625,7 @@ textarea{
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
-    margin-top: 16px !important;
+    margin-top: 23px !important;
 }
 .blog-site .title{
     font-family: 'Crucial' !important;
