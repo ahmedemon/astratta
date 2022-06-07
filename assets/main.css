@@ -362,10 +362,10 @@ textarea{
 }
 /* footer nav */
 
-.form-control:focus{
+/* .form-control:focus{
     transition: 0.3s ease-in-out;
     border-bottom: 1px solid #FF007D !important;
-}
+} */
 
 /* section 1 */
 .section1{
