@@ -18,47 +18,53 @@
     <body>
         <div class="container-fluid px-0 bg-white">
             <!-- navbar start -->
-            <div class="container px-lg-0">
-                <nav class="navbar navbar-expand-lg bg-white sticky-top">
-                    <a class="navbar-brand" href="#"><img class="nav-logo" src="assets/images/logo.png" alt="" /></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 menu mt-lg-0 mt-3">
-                            <li class="nav-item">
-                                <a class="nav-links text-decoration-none" href="index.blade.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-links text-decoration-none" href="paintings.blade.html">Paintings</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-links text-decoration-none" href="artists.blade.html">Artists</a>
-                            </li>
-                            <!-- <li class="nav-item">
+            <div class="container-fluid bg-white sticky-top px-0 mx-auto shadow">
+                <div class="container px-lg-0 bg-white">
+                    <nav class="navbar navbar-expand-lg bg-white">
+                        <a class="navbar-brand" href="#"><img class="nav-logo" src="assets/images/logo.png" alt="" /></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 menu mt-lg-0 mt-3">
+                                <li class="nav-item">
+                                    <a class="nav-links text-decoration-none" href="index.blade.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-links text-decoration-none" href="paintings.blade.html">Paintings</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-links text-decoration-none" href="artists.blade.html">Artists</a>
+                                </li>
+                                <!-- <li class="nav-item">
                                 <a class="nav-links text-decoration-none" href="about.blade.html">About</a>
                             </li> -->
-                            <li class="nav-item">
-                                <a class="nav-links text-decoration-none" href="contact.blade.html">Contact</a>
-                            </li>
-                            <li class="nav-item d-lg-none">
-                                <a href="javascript:void();" class="btn rounded-0 sign-in-button">Sign In</a>
-                                <a href="javascript:void();" class="btn rounded-0 sign-up-button">Sign up</a>
-                            </li>
-                        </ul>
-                        <a href="javascript:void();" class="btn rounded-0 sign-in-button d-lg-block d-none">Sign In</a>
-                        <a href="javascript:void();" class="btn rounded-0 sign-up-button d-lg-block d-none">Sign up</a>
-                    </div>
-                </nav>
+                                <li class="nav-item">
+                                    <a class="nav-links text-decoration-none" href="contact.blade.html">Contact</a>
+                                </li>
+                                <li class="nav-item d-lg-none">
+                                    <a href="javascript:void();" class="btn rounded-0 sign-in-button">Sign In</a>
+                                    <a href="javascript:void();" class="btn rounded-0 sign-up-button">Sign up</a>
+                                </li>
+                            </ul>
+                            <a href="javascript:void();" class="btn rounded-0 sign-in-button d-lg-block d-none">Sign In</a>
+                            <a href="javascript:void();" class="btn rounded-0 sign-up-button d-lg-block d-none">Sign up</a>
+                        </div>
+                    </nav>
+                </div>
             </div>
             <!-- navbar end -->
 
             <!-- become artist section -->
             <div class="container bg-white px-lg-0">
                 <div class="row mx-auto become-an-artist">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h1 class="my-0">Interested in abstract painting?</h1>
-                        <a href="" class="become-an-artist-link">Become An Artist</a>
+                    <div class="d-lg-flex justify-content-between align-items-center">
+                        <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6 d-flex justify-content-lg-end justify-content-center col-12">
+                            <h1 class="my-lg-0 my-3">Interested in abstract painting?</h1>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-6 d-flex justify-content-lg-end justify-content-center col-12">
+                            <a href="" class="become-an-artist-link">Become An Artist</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -66,9 +72,9 @@
 
             <!-- artists -->
             <div class="artist-section">
-                <div class="container section2-container-3 px-lg-0">
+                <div class="container artist-section-container section2-container-3 px-lg-0">
                     <div class="artist-loop row justify-content-between">
-                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                        <div class="col-md-6 col-6 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center px-lg-0">
                             <div class="item">
                                 <div>
                                     <img src="assets/images/top-artist/ta1.png" alt="" />
@@ -76,7 +82,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                        <div class="col-md-6 col-6 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center px-lg-0">
                             <div class="item">
                                 <div>
                                     <img src="assets/images/top-artist/ta2.png" alt="" />
@@ -84,7 +90,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                        <div class="col-md-6 col-6 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center px-lg-0">
                             <div class="item">
                                 <div>
                                     <img src="assets/images/top-artist/ta3.png" alt="" />
@@ -92,7 +98,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                        <div class="col-md-6 col-6 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center px-lg-0">
                             <div class="item">
                                 <div>
                                     <img src="assets/images/top-artist/ta4.png" alt="" />
@@ -100,7 +106,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                        <div class="col-md-6 col-6 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center px-lg-0">
                             <div class="item">
                                 <div>
                                     <img src="assets/images/top-artist/ta1.png" alt="" />
@@ -108,7 +114,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                        <div class="col-md-6 col-6 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center px-lg-0">
                             <div class="item">
                                 <div>
                                     <img src="assets/images/top-artist/ta2.png" alt="" />
@@ -116,7 +122,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                        <div class="col-md-6 col-6 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center px-lg-0">
                             <div class="item">
                                 <div>
                                     <img src="assets/images/top-artist/ta3.png" alt="" />
@@ -124,7 +130,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                        <div class="col-md-6 col-6 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center px-lg-0">
                             <div class="item">
                                 <div>
                                     <img src="assets/images/top-artist/ta4.png" alt="" />
@@ -132,7 +138,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                        <div class="col-md-6 col-6 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center px-lg-0">
                             <div class="item">
                                 <div>
                                     <img src="assets/images/top-artist/ta1.png" alt="" />
@@ -140,7 +146,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                        <div class="col-md-6 col-6 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center px-lg-0">
                             <div class="item">
                                 <div>
                                     <img src="assets/images/top-artist/ta2.png" alt="" />
@@ -148,7 +154,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                        <div class="col-md-6 col-6 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center px-lg-0">
                             <div class="item">
                                 <div>
                                     <img src="assets/images/top-artist/ta3.png" alt="" />
@@ -156,7 +162,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                        <div class="col-md-6 col-6 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center px-lg-0">
                             <div class="item">
                                 <div>
                                     <img src="assets/images/top-artist/ta4.png" alt="" />
@@ -164,7 +170,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                        <div class="col-md-6 col-6 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center px-lg-0">
                             <div class="item">
                                 <div>
                                     <img src="assets/images/top-artist/ta1.png" alt="" />
@@ -172,7 +178,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                        <div class="col-md-6 col-6 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center px-lg-0">
                             <div class="item">
                                 <div>
                                     <img src="assets/images/top-artist/ta2.png" alt="" />
@@ -180,7 +186,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                        <div class="col-md-6 col-6 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center px-lg-0">
                             <div class="item">
                                 <div>
                                     <img src="assets/images/top-artist/ta3.png" alt="" />
@@ -188,7 +194,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                        <div class="col-md-6 col-6 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center px-lg-0">
                             <div class="item">
                                 <div>
                                     <img src="assets/images/top-artist/ta4.png" alt="" />
