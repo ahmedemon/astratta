@@ -4,49 +4,59 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Astratta | View</title>
+        <title>Astratta | Product View</title>
+        <!-- cdn links -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+        <!-- cdn links -->
 
+        <!-- local link -->
         <link rel="stylesheet" href="assets/main.css" />
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+        <!-- local link -->
     </head>
     <body>
         <div class="container-fluid px-0 bg-white">
             <!-- navbar start -->
-            <nav class="navbar navbar-expand-lg bg-white sticky-top shadow">
-                <div class="container">
-                    <a class="navbar-brand" href="#"><img class="nav-logo" src="assets/images/logo.jpg" alt="" /></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 menu mt-lg-0 mt-3">
-                            <li class="nav-item">
-                                <a class="nav-links text-decoration-none" href="index.blade.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-links text-decoration-none" href="paintings.blade.html">Paintings</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-links text-decoration-none" href="artists.blade.html">Artists</a>
-                            </li>
-                            <li class="nav-item">
+            <div class="container-fluid bg-white sticky-top px-0 mx-auto shadow">
+                <div class="container px-lg-0 bg-white">
+                    <nav class="navbar navbar-expand-lg bg-white">
+                        <a class="navbar-brand" href="#"><img class="nav-logo" src="assets/images/logo.png" alt="" /></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 menu mt-lg-0 mt-3">
+                                <li class="nav-item">
+                                    <a class="nav-links text-decoration-none" href="index.blade.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-links text-decoration-none" href="paintings.blade.html">Paintings</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-links text-decoration-none" href="artists.blade.html">Artists</a>
+                                </li>
+                                <!-- <li class="nav-item">
                                 <a class="nav-links text-decoration-none" href="about.blade.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-links text-decoration-none" href="contact.blade.html">Contact</a>
-                            </li>
-                            <li class="nav-item d-lg-none">
-                                <button class="sign-up-button">Sign up</button>
-                            </li>
-                        </ul>
-                        <button class="sign-up-button d-lg-block d-none">Sign up</button>
-                    </div>
+                            </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-links text-decoration-none" href="contact.blade.html">Contact</a>
+                                </li>
+                                <li class="nav-item d-lg-none">
+                                    <a href="javascript:void();" class="btn rounded-0 sign-in-button">Sign In</a>
+                                    <a href="javascript:void();" class="btn rounded-0 sign-up-button">Sign up</a>
+                                </li>
+                            </ul>
+                            <a href="javascript:void();" class="btn rounded-0 sign-in-button d-lg-block d-none">Sign In</a>
+                            <a href="javascript:void();" class="btn rounded-0 sign-up-button d-lg-block d-none">Sign up</a>
+                        </div>
+                    </nav>
                 </div>
-            </nav>
+            </div>
             <!-- navbar end -->
 
             <!-- product grettings -->
@@ -70,12 +80,7 @@
                                 <div class="row">
                                     <div class="col-md-12 d-flex justify-content-end">
                                         <div>
-                                            <img id="main-image" src="assets/images/art/demo3.png" alt="" />
-                                            <!-- <div class="row justify-content-center mt-3">
-                                                <img class="thumbnails px-0" onclick="change_image(this)" src="assets/images/art/demo1.png" alt="" />
-                                                <img class="thumbnails px-0" onclick="change_image(this)" src="assets/images/art/demo3.png" alt="" />
-                                                <img class="thumbnails px-0" onclick="change_image(this)" src="assets/images/art/demo2.png" alt="" />
-                                            </div> -->
+                                            <img id="main-image" class="" src="assets/images/art/art1.png" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -92,9 +97,9 @@
                             <h1>Photos</h1>
                         </div>
                         <div class="col-md-8 d-flex justify-content-between">
-                            <a class="thumbnails text-left" href="javascript:void();"><img onclick="change_image(this)" src="assets/images/art/demo3.png" alt="" /></a>
-                            <a class="thumbnails text-center" href="javascript:void();"><img onclick="change_image(this)" src="assets/images/art/demo1.png" alt="" /></a>
-                            <a class="thumbnails text-end" href="javascript:void();"><img onclick="change_image(this)" src="assets/images/art/demo2.png" alt="" /></a>
+                            <a class="thumbnails text-left" href="javascript:void();"><img onclick="change_image(this)" src="assets/images/art/art1.png" alt="" /></a>
+                            <a class="thumbnails text-center" href="javascript:void();"><img onclick="change_image(this)" src="assets/images/art/art2.png" alt="" /></a>
+                            <a class="thumbnails text-end" href="javascript:void();"><img onclick="change_image(this)" src="assets/images/art/art3.png" alt="" /></a>
                         </div>
                     </div>
                 </div>
@@ -173,45 +178,51 @@
             </div>
 
             <div class="container-fluid product-section3 bg-white">
-                <div class="container section2-container-2">
+                <div class="container section2-container-2 px-lg-0">
                     <h2>Related Painting</h2>
-                    <div class="row justify-content-lg-between justify-content-md-between justify-content-center mx-auto">
-                        <div class="col-md-4 px-lg-0">
-                            <a href="">
-                                <img class="w-100 p-3" src="assets/images/best-selling/bs1.png" alt="" />
+                    <div class="row best-selling-container justify-content-lg-between justify-content-md-between justify-content-center w-100">
+                        <div class="col-lg-6 col-xl-4 col-md-6 col-6 painting">
+                            <a href="view-product.blade.html">
+                                <img class="p-3" src="assets/images/best-selling/bs1.png" alt="" />
                                 <h3>Lorem Ipsum is simply dummy text of the printing and</h3>
                                 <p class="my-0">$5000</p>
-                                <div class="d-inline-flex align-items-center justify-content-end buy-now">
-                                    <small>Buy Now</small>
-                                    <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
-                                    </svg>
+                                <div class="d-flex align-items-center justify-content-lg-start justify-content-between buy-now">
+                                    <small class="my-0">Buy Now</small>
+                                    <div class="d-flex align-items-center">
+                                        <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
+                                        </svg>
+                                    </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4 px-lg-0">
-                            <a href="">
-                                <img class="w-100 p-3" src="assets/images/best-selling/bs2.png" alt="" />
+                        <div class="col-lg-6 col-xl-4 col-md-6 col-6 painting">
+                            <a href="view-product.blade.html">
+                                <img class="p-3" src="assets/images/best-selling/bs2.png" alt="" />
                                 <h3>Why do we use it</h3>
                                 <p class="my-0">$5000</p>
-                                <div class="d-inline-flex align-items-center justify-content-end buy-now">
-                                    <small>Buy Now</small>
-                                    <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
-                                    </svg>
+                                <div class="d-flex align-items-center justify-content-lg-start justify-content-between buy-now">
+                                    <small class="my-0">Buy Now</small>
+                                    <div class="d-flex align-items-center">
+                                        <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
+                                        </svg>
+                                    </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-4 px-lg-0">
-                            <a href="">
-                                <img class="w-100 p-3" src="assets/images/best-selling/bs3.png" alt="" />
+                        <div class="col-lg-6 col-xl-4 col-md-6 col-6 painting">
+                            <a href="view-product.blade.html">
+                                <img class="p-3" src="assets/images/best-selling/bs3.png" alt="" />
                                 <h3>Lorem Ipsum is simply dummy text of the printing and</h3>
                                 <p class="my-0">$5000</p>
-                                <div class="d-inline-flex align-items-center justify-content-end buy-now">
-                                    <small>Buy Now</small>
-                                    <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
-                                    </svg>
+                                <div class="d-flex align-items-center justify-content-lg-start justify-content-between buy-now">
+                                    <small class="my-0">Buy Now</small>
+                                    <div class="d-flex align-items-center">
+                                        <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M32.3536 4.35355C32.5488 4.15829 32.5488 3.84171 32.3536 3.64644L29.1716 0.464464C28.9763 0.269201 28.6597 0.269201 28.4645 0.464464C28.2692 0.659726 28.2692 0.976308 28.4645 1.17157L31.2929 4L28.4645 6.82842C28.2692 7.02369 28.2692 7.34027 28.4645 7.53553C28.6597 7.73079 28.9763 7.73079 29.1716 7.53553L32.3536 4.35355ZM4.37114e-08 4.5L32 4.5L32 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z" fill="black" />
+                                        </svg>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -224,8 +235,8 @@
             <div class="footer">
                 <div class="container">
                     <div class="row mx-auto justify-content-between">
-                        <div class="col-md-3 mb-4 mb-lg-0 px-lg-2 px-3">
-                            <img class="footer-nav-logo" src="assets/images/logo.jpg" alt="" />
+                        <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0 px-lg-2 px-3 col20">
+                            <img class="footer-nav-logo" src="assets/images/logo.png" alt="" />
                             <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem non ornare nibh metus a. Faucibus dictumst et mattis vestibulum.</p>
                             <div class="social-links">
                                 <a href="" class=""><i class="fab fa-facebook-f"></i></a>
@@ -236,9 +247,9 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-12 col-lg-6 col-xl-6 col60">
                             <div class="row">
-                                <div class="col-md-6 mb-4 mb-lg-0">
+                                <div class="col-md-6 mb-4 mb-lg-0 col50">
                                     <ul class="link-section">
                                         <h1 class="footer-heading">Links</h1>
                                         <li class="list-group-item"><a href="javascript:void();" class="">Home</a></li>
@@ -249,7 +260,7 @@
                                         <li class="list-group-item"><a href="javascript:void();" class="">Contact</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-md-6 mb-4 mb-lg-0">
+                                <div class="col-md-6 mb-4 mb-lg-0 col50">
                                     <ul class="contact-section">
                                         <h1 class="footer-heading">Contact</h1>
                                         <li class="list-group-item">4340 Wetzel Lane, Alden, Michigan, 49612</li>
@@ -262,7 +273,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 mb-4 mb-lg-0">
+                        <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0 col20">
                             <div class="footer-gallery d-flex justify-content-lg-end justify-content-center">
                                 <img class="gimg1" src="assets/images/footer1.png" alt="" />
                                 <img class="gimg2" src="assets/images/footer2.png" alt="" />

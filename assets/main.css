@@ -1,3 +1,4 @@
+/* global */
 @font-face {
     font-family: 'Crucial';
     src: url('fonts/Crucial-Medium.otf');
@@ -9,6 +10,15 @@
 .container {
     width: 1140px;
 }
+.btn {
+    transition-duration: 0.3s;
+}
+
+.btn:focus {
+    transition-duration: 0.3s;
+    box-shadow: 0px 0px 0px 4px #ff007b40 !important;
+}
+/* global */
 @media only screen and (min-width: 360px) and (max-width: 995px) {
     .container {
         width: 483px;
@@ -113,6 +123,7 @@
     margin-left: 30px;
     transition-duration: 0.3s;
 }
+
 .sign-in-button:focus{
     transition-duration: 0.3s;
     box-shadow: 0px 0px 0px 4px #ff007b40 !important;
@@ -802,8 +813,8 @@ textarea{
     margin-bottom: 96px;
 }
 .become-an-artist div{
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
 }
 .become-an-artist h1{
     font-family: 'Crucial' !important;
@@ -1038,7 +1049,6 @@ textarea{
 
 .thumbnails:focus img{
     filter: opacity(50%);
-    border: 1px solid;
 }
 
 .product-section2 .details-section ol{
@@ -1120,6 +1130,11 @@ textarea{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+    }
+}
+@media only screen and (min-width: 995px) and (max-width: 2560px) {
+    .artist-section .artist-loop .col-6 {
+        width: 247.3px !important;
     }
 }
 @media only screen and (min-width: 995px) and (max-width: 1024px) {
