@@ -274,13 +274,13 @@ textarea{
 }
 
 .social-links{
-    margin-top: 60px;
-    margin-left: 0px !important;
+    margin-top: 35px !important;
+    margin-left: -10px !important;
 }
 .social-links i{
     color: #000000;
-    font-size: 15px;
-    margin-right: 18px !important;
+    font-size: 18px;
+    margin-right: 14px !important;
 }
 /* get in touch end */
 
@@ -297,7 +297,13 @@ textarea{
     margin-bottom: 30px;
 }
 .footer .about{
-    margin-bottom: 40px;
+    font-family: 'Montserrat' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: -10px;
+    margin-bottom: 35px;
 }
 .footer .footer-heading{
     font-family: 'Crucial' !important;
@@ -326,6 +332,7 @@ textarea{
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
+    padding-left: 40px;
 }
 .footer ul li{
     margin-bottom: 17px;
@@ -335,15 +342,16 @@ textarea{
     color: #000000;
 }
 .footer-gallery img{
-    height: 180px;
     width: 130px;
+    height: 178px;
     border-radius: 0px;
 }
 .footer-gallery .gimg1{
+    margin-right: -72px;
     float: left;
 }
 .footer-gallery .gimg2{
-    margin-left: -75px;
+    margin-right: -10px;
     margin-top: 58px;
 }
 /* footer */
@@ -854,6 +862,8 @@ textarea{
     height: 49px;
     background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%);
     transition-duration: 0.3s;
+
+    margin-right: -5px;
 }
 .become-an-artist-link:hover{
     color: white;
@@ -956,7 +966,7 @@ textarea{
 .product-section1 p{
     font-family: 'Montserrat' !important;
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 18px;
     line-height: 24px;
     
@@ -965,8 +975,16 @@ textarea{
     
     margin-bottom: 16px;
 }
+.product-section1 .title{ 
+}
+.product-section1 .product-details{
+    margin-left: -10PX !important;
+    margin-top: 5px !important;
+}
 .product-section1 .title img{
     margin-left: 20px;
+    height: 3px !important;
+    width: 75px !important;
 }
 
 .product-section1 h1{
