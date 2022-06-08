@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Astratta | Artists</title>
+        <title>Astratta | Home</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
         <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
@@ -18,9 +18,9 @@
     <body>
         <div class="container-fluid px-0 bg-white">
             <!-- navbar start -->
-            <nav class="navbar navbar-expand-lg bg-white sticky-top shadow">
-                <div class="container">
-                    <a class="navbar-brand" href="#"><img class="nav-logo" src="assets/images/logo.jpg" alt="" /></a>
+            <div class="container px-lg-0">
+                <nav class="navbar navbar-expand-lg bg-white sticky-top">
+                    <a class="navbar-brand" href="#"><img class="nav-logo" src="assets/images/logo.png" alt="" /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -35,27 +35,29 @@
                             <li class="nav-item">
                                 <a class="nav-links text-decoration-none" href="artists.blade.html">Artists</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-links text-decoration-none" href="about.blade.html">About</a>
-                            </li>
+                            </li> -->
                             <li class="nav-item">
                                 <a class="nav-links text-decoration-none" href="contact.blade.html">Contact</a>
                             </li>
                             <li class="nav-item d-lg-none">
-                                <button class="sign-up-button">Sign up</button>
+                                <a href="javascript:void();" class="btn rounded-0 sign-in-button">Sign In</a>
+                                <a href="javascript:void();" class="btn rounded-0 sign-up-button">Sign up</a>
                             </li>
                         </ul>
-                        <button class="sign-up-button d-lg-block d-none">Sign up</button>
+                        <a href="javascript:void();" class="btn rounded-0 sign-in-button d-lg-block d-none">Sign In</a>
+                        <a href="javascript:void();" class="btn rounded-0 sign-up-button d-lg-block d-none">Sign up</a>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
             <!-- navbar end -->
 
             <!-- become artist section -->
-            <div class="container bg-white">
+            <div class="container bg-white px-lg-0">
                 <div class="row mx-auto become-an-artist">
                     <div class="d-flex justify-content-between align-items-center">
-                        <h1>Interested in abstract painting?</h1>
+                        <h1 class="my-0">Interested in abstract painting?</h1>
                         <a href="" class="become-an-artist-link">Become An Artist</a>
                     </div>
                 </div>
@@ -63,135 +65,137 @@
             <!-- become artist section -->
 
             <!-- artists -->
-            <div class="container section2-container-3 artist">
-                <div class="row">
-                    <div class="col-md-3 d-flex justify-content-center">
-                        <a href="view-artist.blade.html" class="text-decoration-none text-dark">
-                            <div>
-                                <img src="assets/images/avatar.png" alt="" />
-                                <p class="my-0">Jean Garrett</p>
+            <div class="artist-section">
+                <div class="container section2-container-3 px-lg-0">
+                    <div class="artist-loop row justify-content-between">
+                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                            <div class="item">
+                                <div>
+                                    <img src="assets/images/top-artist/ta1.png" alt="" />
+                                    <p class="my-0">Andrea Moore</p>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center">
-                        <a href="view-artist.blade.html" class="text-decoration-none text-dark">
-                            <div>
-                                <img src="assets/images/avatar.png" alt="" />
-                                <p class="my-0">Arnold Banks</p>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                            <div class="item">
+                                <div>
+                                    <img src="assets/images/top-artist/ta2.png" alt="" />
+                                    <p class="my-0">Arnold Banks</p>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center">
-                        <a href="view-artist.blade.html" class="text-decoration-none text-dark">
-                            <div>
-                                <img src="assets/images/avatar.png" alt="" />
-                                <p class="my-0">Sherman Mitchell</p>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                            <div class="item">
+                                <div>
+                                    <img src="assets/images/top-artist/ta3.png" alt="" />
+                                    <p class="my-0">Andrea Moore</p>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center">
-                        <a href="view-artist.blade.html" class="text-decoration-none text-dark">
-                            <div>
-                                <img src="assets/images/avatar.png" alt="" />
-                                <p class="my-0">Andrea Moore</p>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                            <div class="item">
+                                <div>
+                                    <img src="assets/images/top-artist/ta4.png" alt="" />
+                                    <p class="my-0">Andrea Moore</p>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center">
-                        <a href="view-artist.blade.html" class="text-decoration-none text-dark">
-                            <div>
-                                <img src="assets/images/avatar.png" alt="" />
-                                <p class="my-0">Jean Garrett</p>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                            <div class="item">
+                                <div>
+                                    <img src="assets/images/top-artist/ta1.png" alt="" />
+                                    <p class="my-0">Andrea Moore</p>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center">
-                        <a href="view-artist.blade.html" class="text-decoration-none text-dark">
-                            <div>
-                                <img src="assets/images/avatar.png" alt="" />
-                                <p class="my-0">Arnold Banks</p>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                            <div class="item">
+                                <div>
+                                    <img src="assets/images/top-artist/ta2.png" alt="" />
+                                    <p class="my-0">Arnold Banks</p>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center">
-                        <a href="view-artist.blade.html" class="text-decoration-none text-dark">
-                            <div>
-                                <img src="assets/images/avatar.png" alt="" />
-                                <p class="my-0">Sherman Mitchell</p>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                            <div class="item">
+                                <div>
+                                    <img src="assets/images/top-artist/ta3.png" alt="" />
+                                    <p class="my-0">Andrea Moore</p>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center">
-                        <a href="view-artist.blade.html" class="text-decoration-none text-dark">
-                            <div>
-                                <img src="assets/images/avatar.png" alt="" />
-                                <p class="my-0">Andrea Moore</p>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                            <div class="item">
+                                <div>
+                                    <img src="assets/images/top-artist/ta4.png" alt="" />
+                                    <p class="my-0">Andrea Moore</p>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center">
-                        <a href="view-artist.blade.html" class="text-decoration-none text-dark">
-                            <div>
-                                <img src="assets/images/avatar.png" alt="" />
-                                <p class="my-0">Jean Garrett</p>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                            <div class="item">
+                                <div>
+                                    <img src="assets/images/top-artist/ta1.png" alt="" />
+                                    <p class="my-0">Andrea Moore</p>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center">
-                        <a href="view-artist.blade.html" class="text-decoration-none text-dark">
-                            <div>
-                                <img src="assets/images/avatar.png" alt="" />
-                                <p class="my-0">Arnold Banks</p>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                            <div class="item">
+                                <div>
+                                    <img src="assets/images/top-artist/ta2.png" alt="" />
+                                    <p class="my-0">Arnold Banks</p>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center">
-                        <a href="view-artist.blade.html" class="text-decoration-none text-dark">
-                            <div>
-                                <img src="assets/images/avatar.png" alt="" />
-                                <p class="my-0">Sherman Mitchell</p>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                            <div class="item">
+                                <div>
+                                    <img src="assets/images/top-artist/ta3.png" alt="" />
+                                    <p class="my-0">Andrea Moore</p>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center">
-                        <a href="view-artist.blade.html" class="text-decoration-none text-dark">
-                            <div>
-                                <img src="assets/images/avatar.png" alt="" />
-                                <p class="my-0">Andrea Moore</p>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                            <div class="item">
+                                <div>
+                                    <img src="assets/images/top-artist/ta4.png" alt="" />
+                                    <p class="my-0">Andrea Moore</p>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center">
-                        <a href="view-artist.blade.html" class="text-decoration-none text-dark">
-                            <div>
-                                <img src="assets/images/avatar.png" alt="" />
-                                <p class="my-0">Jean Garrett</p>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                            <div class="item">
+                                <div>
+                                    <img src="assets/images/top-artist/ta1.png" alt="" />
+                                    <p class="my-0">Andrea Moore</p>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center">
-                        <a href="view-artist.blade.html" class="text-decoration-none text-dark">
-                            <div>
-                                <img src="assets/images/avatar.png" alt="" />
-                                <p class="my-0">Arnold Banks</p>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                            <div class="item">
+                                <div>
+                                    <img src="assets/images/top-artist/ta2.png" alt="" />
+                                    <p class="my-0">Arnold Banks</p>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center">
-                        <a href="view-artist.blade.html" class="text-decoration-none text-dark">
-                            <div>
-                                <img src="assets/images/avatar.png" alt="" />
-                                <p class="my-0">Sherman Mitchell</p>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                            <div class="item">
+                                <div>
+                                    <img src="assets/images/top-artist/ta3.png" alt="" />
+                                    <p class="my-0">Andrea Moore</p>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3 d-flex justify-content-center">
-                        <a href="view-artist.blade.html" class="text-decoration-none text-dark">
-                            <div>
-                                <img src="assets/images/avatar.png" alt="" />
-                                <p class="my-0">Andrea Moore</p>
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-center px-lg-0">
+                            <div class="item">
+                                <div>
+                                    <img src="assets/images/top-artist/ta4.png" alt="" />
+                                    <p class="my-0">Andrea Moore</p>
+                                </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -201,8 +205,8 @@
             <div class="footer">
                 <div class="container">
                     <div class="row mx-auto justify-content-between">
-                        <div class="col-md-3 mb-4 mb-lg-0 px-lg-2 px-3">
-                            <img class="footer-nav-logo" src="assets/images/logo.jpg" alt="" />
+                        <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0 px-lg-2 px-3 col20">
+                            <img class="footer-nav-logo" src="assets/images/logo.png" alt="" />
                             <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem non ornare nibh metus a. Faucibus dictumst et mattis vestibulum.</p>
                             <div class="social-links">
                                 <a href="" class=""><i class="fab fa-facebook-f"></i></a>
@@ -213,9 +217,9 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-12 col-lg-6 col-xl-6 col60">
                             <div class="row">
-                                <div class="col-md-6 mb-4 mb-lg-0">
+                                <div class="col-md-6 mb-4 mb-lg-0 col50">
                                     <ul class="link-section">
                                         <h1 class="footer-heading">Links</h1>
                                         <li class="list-group-item"><a href="javascript:void();" class="">Home</a></li>
@@ -226,7 +230,7 @@
                                         <li class="list-group-item"><a href="javascript:void();" class="">Contact</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-md-6 mb-4 mb-lg-0">
+                                <div class="col-md-6 mb-4 mb-lg-0 col50">
                                     <ul class="contact-section">
                                         <h1 class="footer-heading">Contact</h1>
                                         <li class="list-group-item">4340 Wetzel Lane, Alden, Michigan, 49612</li>
@@ -239,7 +243,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3 mb-4 mb-lg-0">
+                        <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0 col20">
                             <div class="footer-gallery d-flex justify-content-lg-end justify-content-center">
                                 <img class="gimg1" src="assets/images/footer1.png" alt="" />
                                 <img class="gimg2" src="assets/images/footer2.png" alt="" />
