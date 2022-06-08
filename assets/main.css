@@ -674,11 +674,11 @@ textarea{
     font-weight: 500;
     font-size: 48px; 
     color: white;
-    margin: 145px auto 85px auto !important;
+    margin: 142px auto 112px auto !important;
     text-align: center !important;
 }
 .search-breadcrumb .input-group button{
-    margin-right: 10px;
+    margin-right: 20px;
     border-radius: 20px;
     background-color: white;
 }
