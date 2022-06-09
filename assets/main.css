@@ -19,6 +19,11 @@
     box-shadow: 0px 0px 0px 4px #ff007b40 !important;
 }
 /* global */
+@media only screen and (min-width: 360px) and (max-width: 500px) {
+    .product-view-page-container {
+        width: fit-content;
+    }
+}
 @media only screen and (min-width: 360px) and (max-width: 995px) {
     .container {
         width: 483px;
@@ -38,9 +43,13 @@
     text-align: center;
 
     color: #FFFFFF;
-
-    padding: 15px 40px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
+
     width: 158px;
     height: 51px;
     background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%);
@@ -66,7 +75,11 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 
-    padding: 15px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
     margin-left: 30px;
     width: 178px;
     height: 51px;
@@ -518,7 +531,7 @@ textarea{
     line-height: 40px;
 } 
 .section-heading{
-    margin-bottom: 57px;
+    margin-bottom: 64px;
 }
 .section-heading h1{
     color: #000000;
@@ -976,10 +989,10 @@ textarea{
     margin-bottom: 16px;
 }
 .product-section1 .title{ 
+    margin-top: 15px;
 }
-.product-section1 .product-details{
-    margin-left: -10PX !important;
-    margin-top: 5px !important;
+.product-section1 .product-details{ 
+    margin-top: -18px !important;
 }
 .product-section1 .title img{
     margin-left: 20px;
@@ -996,6 +1009,8 @@ textarea{
     width: 460px;
     text-transform: capitalize;
     color: #000000;
+    margin-top: 15px;
+    margin-bottom: 40px;
 }
 .product-section1 h2{
     font-family: 'Crucial' !important;
@@ -1004,6 +1019,7 @@ textarea{
     font-size: 48px;
     line-height: 56px;
     color: #000000;
+    margin-bottom: 40px;
 }
 .product-section1 h2{
     font-family: 'Crucial' !important;
@@ -1017,19 +1033,28 @@ textarea{
     padding: 15px;
     border: 3px solid black;
     filter: drop-shadow(-16.1383px 16.1383px 48.415px rgba(0, 0, 0, 0.1));
-    width: 500px;
-    height: 600px;
+    width: 560px;
+    height: 684px;
 }
 
 
 
+.product-section2 .photos-section h1, .product-section2 .details-section h1, .product-section2 .about-paint-section h1 {
+    margin-top: 20px !important;
+}
 .product-section2 .photos-section{
     height: auto;
     padding-top: 96px !important; 
     padding-bottom: 96px !important; 
 }
 .product-section2 .details-section{
-    padding-top: 96px !important; 
+    font-family: 'Montserrat' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    padding-top: 75px !important;
     height: auto;
 }
 .product-section2 .about-paint-section{
@@ -1040,7 +1065,7 @@ textarea{
     line-height: 24px;
     color: #000000;
 
-    padding-top: 96px !important;  
+    padding-top: 80px !important;
 }
 
 .product-section2 h1{
@@ -1052,12 +1077,11 @@ textarea{
     color: #000000;
 }
 .product-section2 .photos-section a{
-    width: 100%;
-    margin-left: 10px;
+    width: 100%; 
 }
 .product-section2 .photos-section img{
-    width: 100%; 
-    height: 175px;
+    width: 240px;
+    height: 176px;
 }
 
 .thumbnails {
@@ -1074,16 +1098,16 @@ textarea{
 }
 
 .product-section2 .about-section {
-    padding-top: 96px !important;
+    padding-top: 92px !important;
     padding-bottom: 96px !important;
 }
 .product-section2 .about-section .headings{
-    padding: 60px;
+    padding: 60px 60px 50px 60px;
 }
 .product-section2 .about-section .description{
     padding-left: 60px;
     padding-right: 60px;
-    margin-bottom: 60px !important;
+    margin-bottom: 71px !important;
 }
     
 .product-section2 .about-section .description p{
@@ -1093,7 +1117,7 @@ textarea{
     font-size: 18px;
     line-height: 24px;
     color: #000000;
-    margin-bottom: 50px !important;
+    margin-bottom: 55px !important;
 }
 .product-section2 .about-section .description a{
     text-decoration: none;
@@ -1114,6 +1138,7 @@ textarea{
     font-size: 24px;
     line-height: 32px; 
     color: #000000;
+    margin-bottom: 15px !important;
 }
 .product-section2 .about-section .headings .info{
     margin-left: 32px;
@@ -1127,14 +1152,21 @@ textarea{
     color: #FF6DC5;
 }
 .product-section2 .about-section img{
-    width: 124px !important;
-    height: 124px !important;
-    margin-left: 0px !important;
+    width: 128px !important;
+    height: 128px !important;
+    margin-left: -3px !important;
 }
 
 .product-section3{
     margin-top: 96px;
     margin-bottom: 30px;
+}
+.product-section3 h1{
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
 }
 /* view product */
 
@@ -1473,6 +1505,33 @@ textarea{
     .about-section1 h1{
         font-size: 30px !important;
     }
+
+    /* product view page */
+    .product-section1 .content{
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    .product-section2 .photos-section, .product-section2 .details-section, .product-section2 .about-paint-section, .product-section2 .about-section {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+     
+    .product-section2 .photos-section img {
+        width: 100%;
+        height: 100%;
+    }
+    #main-image{
+        width: 300px !important;
+        height: auto !important;
+    }
+    .product-section2{
+        width: fit-content;
+    }
+    .product-section3{
+        margin-top: 20px !important;
+    }
+    /* product view page */
+
     /* footer section */
     .footer .container{
         background-color: #F2F2F2; 
