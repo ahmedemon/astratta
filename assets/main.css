@@ -620,6 +620,7 @@ textarea{
     font-weight: 500;
     font-size: 26px;
     line-height: 32px;
+    color: #000000 !important;
 }
 .cta-section{
     margin-bottom: 96px;
@@ -1170,6 +1171,87 @@ textarea{
 }
 /* view product */
 
+/* view artist */
+.view-artist{
+    margin-top: 96px;
+}
+.view-artist .left-side{
+    width: 463px;
+    height: 1715px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 20px !important;
+}
+.view-artist .left-side hr{
+    opacity: 1;
+    width: 114px;
+    margin-top: 48px !important;
+    margin-bottom: 48px !important;
+} 
+.view-artist .left-side .card{
+    padding: 50px 50px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.view-artist .left-side .card h3{
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+.view-artist .left-side .card p{
+    margin-top: 5px !important;
+    font-family: 'Montserrat' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FF6DC5;
+}
+.view-artist .left-side .card .artist-description p{
+    font-family: 'Montserrat' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+    width: 361px;
+}
+.view-artist .left-side .card img{
+    width: 180px;
+    height: 180px;
+    margin-bottom: 30px;
+}
+.view-artist .right-side{
+    width: 602.88px;
+    padding-top: 30px;
+}
+.view-artist .right-side .painting{
+    width: 286.44px !important;
+    margin-bottom: 40px !important;
+}
+.view-artist .right-side .painting h3{
+    width: 286px !important;
+    font-family: 'Crucial' !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 24px !important;
+    line-height: 32px !important;
+    color: #000000 !important;
+    margin-bottom: 20px !important;
+}
+.view-artist .right-side .painting p{
+    margin-bottom: 20px !important;
+}
+.view-artist .right-side img{
+    width: 286.44px !important;
+    height: 350px !important;
+    margin-bottom: 20px !important;
+}
+/* view artist */
 
 /* media query */
 @media only screen and (min-width: 995px) and (max-width: 2560px) {
