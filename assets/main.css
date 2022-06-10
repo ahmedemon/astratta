@@ -358,6 +358,9 @@ textarea{
     width: 130px;
     height: 178px;
     border-radius: 0px;
+    padding: 5px;
+    box-shadow: inset 0px 0px 0px 1.26225px #000000, inset 0px 0px 0px 6.31124px #FFFFFF !important;
+    filter: drop-shadow(-4.20749px 4.20749px 12.6225px rgba(0, 0, 0, 0.1)) !important;
 }
 .footer-gallery .gimg1{
     margin-right: -72px;
@@ -1030,12 +1033,16 @@ textarea{
     line-height: 56px;
     color: #000000;
 }
+.product-section1 .hero-section {
+    padding-left: 75px !important;
+    padding-right: 75px !important;
+}
 .product-section1 .art #main-image{
     padding: 15px;
     border: 3px solid black;
     filter: drop-shadow(-16.1383px 16.1383px 48.415px rgba(0, 0, 0, 0.1));
-    width: 560px;
-    height: 684px;
+    width: 482.79px;
+    height: 589.93px;
 }
 
 
