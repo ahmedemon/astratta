@@ -281,6 +281,7 @@ svg{
 
 .map{ 
     margin-top: 96px !important;
+    margin-bottom: 96px !important;
 }
 table{
     width: 340px;
@@ -609,7 +610,6 @@ textarea{
     height: 606px;
 }
 .section2-container-2{
-    margin-bottom: 30px !important;
 }
 
 .section2-container-2 .painting h3{
