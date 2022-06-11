@@ -178,15 +178,16 @@
 .breadcrumb{ 
     width: 100%;
     height: 288px;
-    left: 0px;
-    top: 141px;
+    left: 0px; 
     background: #380F28;
+    margin-bottom: 0px !important;
 }
 svg{
     position: absolute;
     filter: brightness(120%);
 }
-.breadcrumb h1{ 
+.breadcrumb h1{
+    margin-bottom: 12px !important;
     display: block !important;
     letter-spacing: 0em;
     text-align: left;
@@ -214,6 +215,21 @@ svg{
 /* Breadcrumb secion end */
 
 /* get in touch start */
+.get-in-touch label{
+    font-family: 'Crucial' !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    line-height: 14px !important;
+}
+.get-in-touch ::placeholder{
+    font-family: sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.3);
+}
 .get-in-touch h1{
     width: 286px;
     height: 112px;
@@ -226,12 +242,14 @@ svg{
     
     text-transform: capitalize;
     color: #000000;
+
+    margin-top: 36px;
     margin-bottom: 24px !important;
 }
 .get-in-touch p{
     width: 357px;
     height: 24px;
-    margin-bottom: 80px !important;
+    margin-bottom: 70px !important;
     /* Paragraph */
 
     font-family: 'Montserrat';
@@ -243,11 +261,26 @@ svg{
 }
 .get-in-touch{
     background-color: #FAFAFA;
-    padding: 129px 0 !important;
+    padding: 94px 0 !important;
+}
+
+.get-in-touch-form .form-control {
+    width: 248.5px !important;
+}
+.get-in-touch-form .textarea {
+    width: 100% !important;
+}
+.get-in-touch-form .group {
+    margin-bottom: 40px !important;
 }
 .get-in-touch-form button{
     float: right;
-    margin-top: 50px;
+    margin-top: 40px;
+    width: 125px !important;
+}
+
+.map{ 
+    margin-top: 96px !important;
 }
 table{
     width: 340px;
@@ -260,7 +293,11 @@ table{
     color: #000000 !important;
 }
 table td{
-    padding-bottom: 40px !important;
+    padding-bottom: 30px !important;
+    padding-left: 0px !important;
+}
+table .details-td{
+    padding-left: 24px !important;
 }
 table td i{
     font-size: 32px;
@@ -272,23 +309,25 @@ table td i{
 .get-in-touch-form .col-md-6 input::placeholder{
     font-size: 15px;
 }
-.get-in-touch-form .col-md-6{
-    margin-bottom: 40px !important;
+.get-in-touch .social-links {
+    margin-top: 45px !important;
 }
-
+.get-in-touch .social-links i{
+    margin-right: 12px !important;
+}
 .form-box{
     width: 657px;
     padding: 48px;
+    padding-top: 40px !important;
     box-shadow: 20px 20px 50px 0px #0000000F;
     border-radius: 10px;
 }
 textarea{
-    height: 248px;
+    height: 275px;
 }
 
 .social-links{
-    margin-top: 35px !important;
-    margin-left: -10px !important;
+    margin-top: 58px !important;
 }
 .social-links i{
     color: #000000;
@@ -433,6 +472,14 @@ textarea{
 .section1-content {
     height: 800px;
 }
+.section1-content p {
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
 
 .start-selling-link{
     transition-duration: 0.3s;
@@ -534,7 +581,7 @@ textarea{
     line-height: 40px;
 } 
 .section-heading{
-    margin-bottom: 64px;
+    margin-bottom: 55px;
 }
 .section-heading h1{
     color: #000000;
@@ -546,6 +593,9 @@ textarea{
 
     box-shadow: inset 0px 0px 0px 3px #000000, inset 0px 0px 0px 15px #FFFFFF;
     filter: drop-shadow(-10px 10px 30px rgba(0, 0, 0, 0.1));
+}
+.section2-container-3 .section-heading{
+    margin-bottom: 64px !important;
 }
 .section2-container-2 .row{
 }
@@ -559,7 +609,7 @@ textarea{
     height: 606px;
 }
 .section2-container-2{
-    margin-bottom: 37px !important;
+    margin-bottom: 30px !important;
 }
 
 .section2-container-2 .painting h3{
@@ -573,8 +623,7 @@ textarea{
     font-weight: 500;
     font-size: 26px;
     line-height: 24px;
-    margin-bottom: 24px !important;
-    margin-top: 24px !important;
+    margin: 24px auto !important;
 }
 .buy-now{
     width: 129px;
@@ -832,6 +881,7 @@ textarea{
     margin-bottom: 96px !important;
 }
 .become-an-artist{
+    margin-top: 96px !important;
     height: 99px;
     border: 3px solid;
     border-image: linear-gradient(to right, #FF007D, #B627DC) 1 !important;
@@ -901,7 +951,7 @@ textarea{
 
 /* about section */
 .about-breadcumb .breadcrumb{
-    height: 656px !important;
+    height: 720px !important;
     background-image: url(images/search-breadcrumb.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -910,7 +960,7 @@ textarea{
 }
 
 .about-breadcumb p{
-    width: 665px;
+    width: 773px;
     font-family: 'Crucial' !important;
     font-style: normal;
     font-weight: 500;
@@ -919,37 +969,37 @@ textarea{
     color: #FFFFFF;
 }
 .about-breadcumb h1{
-    font-family: 'Crucial';
+    font-family: 'Crucial' !important;
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
     line-height: 57px;
-
+    margin-left: 40px;
     color: #FFFFFF;
 }
 .quoted-by{
-    margin-top: 75px;
+    margin-top: 90px;
 }
 
 .about-section1{
     margin: 96px auto !important;
 }
 .about-section1 .title{
-    font-family: 'Source Sans Pro' !important;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 24px; 
+    font-family: sans-serif !important;
+    font-style: normal !important;
+    font-weight: 900 !important;
+    line-height: 24px !important;
 
-    letter-spacing: 0.06em;
+    letter-spacing: 0.06em !important;
     text-transform: uppercase;
 
-    background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    margin-bottom: 24px;
+    background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-fill-color: transparent !important;
+
+    margin-bottom: 24px !important;
 }
 .about-section1 h1{
     font-family: 'Crucial' !important;
@@ -968,10 +1018,57 @@ textarea{
     line-height: 24px;
 }
 .about-section1 img{
-    height: 100%;
+    margin-top: 15px;
+    height: 760px;
 }
 .about-section1 .social-links i{
-    font-size: 26px !important;
+    font-size: 30px !important;
+    margin-right: 40px !important;
+}
+
+.about-section2{
+    margin: 96px auto !important;
+}
+.about-section2 .title{
+    font-family: sans-serif !important;
+    font-style: normal !important;
+    font-weight: 900 !important;
+    line-height: 24px !important;
+
+    letter-spacing: 0.06em !important;
+    text-transform: uppercase;
+
+    background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-fill-color: transparent !important;
+
+    margin-top: 5px !important;
+    margin-bottom: 25px !important;
+}
+.about-section2 h1{
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+    margin-bottom: 32px;
+}
+.about-section2 .details{
+    font-family: 'Montserrat' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+.about-section2 img{
+    height: 760px;
+}
+.about-section2 .social-links i{
+    font-size: 30px !important;
+    margin-right: 40px !important;
 }
 /* about section */
 
@@ -1181,6 +1278,7 @@ textarea{
 /* view artist */
 .view-artist{
     margin-top: 96px;
+    margin-bottom: 20px;
 }
 .view-artist .left-side{
     width: 463px;
@@ -1207,6 +1305,7 @@ textarea{
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
+    text-align: center;
     color: #000000;
 }
 .view-artist .left-side .card p{
@@ -1219,13 +1318,14 @@ textarea{
     color: #FF6DC5;
 }
 .view-artist .left-side .card .artist-description p{
+    margin-top: 0px !important;
     font-family: 'Montserrat' !important;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #000000;
-    width: 361px;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    line-height: 24px !important;
+    color: #000000 !important;
+    width: 361px !important;
 }
 .view-artist .left-side .card img{
     width: 180px;
