@@ -4,13 +4,14 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Astratta | Home</title>
+        <title>Astratta | My Cart</title>
         <!-- cdn links -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
         <!-- cdn links -->
 
         <!-- local link -->
@@ -50,7 +51,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto mb-lg-0 d-none d-lg-block">
                         <li class="nav-item">
-                            <a class="nav-link" href=""><img width="124px" src="assets/images/logo.png" alt="" /></a>
+                            <a class="nav-link" href=""><img class="nav-logo" src="assets/images/logo.png" alt="" /></a>
                         </li>
                     </ul>
                     <ul class="navbar-nav m-auto mt-3 d-block d-lg-none">
@@ -62,124 +63,101 @@
                         </li>
                     </ul>
                     <div class="nav-right d-none d-lg-block">
-                        <a href="javascript:void();" class="">
-                            <img src="assets/images/icons/phone.png" alt="" />
-                        </a>
-                        <a href="my-cart.blade.html" class="">
-                            <img src="assets/images/icons/cart.png" alt="" />
-                        </a>
-                        <a href="javascript:void();" class="">
-                            <img src="assets/images/icons/profile.png" alt="" />
-                        </a>
+                        <div class="d-flex">
+                            <a href="javascript:void();" class="">
+                                <img src="assets/images/icons/phone.png" alt="" />
+                            </a>
+                            <a href="my-cart.blade.html" class="">
+                                <img src="assets/images/icons/cart.png" alt="" />
+                            </a>
+                            <div class="dropdown">
+                                <a class="" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" href="javascript:void();" class="">
+                                    <img src="assets/images/icons/profile.png" alt="" />
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end mt-4" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="sign-in.blade.html">Sign In</a></li>
+                                    <li><a class="dropdown-item" href="sign-up.blade.html">Sign Up</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
         <!-- navbar end -->
-        <div class="container-fluid px-0 bg-white product-view-page-container">
-            <!-- breadcumb -->
-            <div class="container-fluid about-breadcumb px-0">
-                <div class="breadcrumb d-flex justify-content-center align-items-center">
-                    <div class="about-quote">
-                        <p class="my-0">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra nulla dolor senectus molestie. Consequat praesent nibh convallis viverra ut aenean dolor.”</p>
-                        <div class="d-flex align-items-center justify-content-end quoted-by">
-                            <img class="h-100" src="assets/images/line.png" alt="" />
-                            <h1 class="my-0">Selim Fresko</h1>
-                        </div>
+        <div class="container-fluid px-0 bg-white">
+            <!-- breadcrumb start -->
+            <div class="breadcrumb">
+                <div class="container d-flex align-items-center">
+                    <div class="bct">
+                        <h1 class="my-0">Cart</h1>
                     </div>
                 </div>
+                <svg width="475" height="288" viewBox="0 0 475 288" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_f_110_1804)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M117.96 -43.3436C164.674 -53.6429 217.107 -38.8116 250.445 -4.53717C284.977 30.9654 304.906 85.8984 289.387 132.899C275.254 175.704 220.835 183.759 181.174 205.261C154.635 219.65 129.573 232.356 99.5724 235.808C60.0245 240.358 17.2217 251.143 -15.0363 227.837C-52.6431 200.666 -88.9656 153.381 -76.1943 108.819C-63.5742 64.7844 2.06967 70.5434 38.1466 42.2692C70.076 17.2456 78.3263 -34.6054 117.96 -43.3436Z" fill="url(#paint0_linear_110_1804)" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_f_110_1804" x="-258.803" y="-226.56" width="733.528" height="648.854" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feGaussianBlur stdDeviation="90" result="effect1_foregroundBlur_110_1804" />
+                        </filter>
+                        <linearGradient id="paint0_linear_110_1804" x1="-76.0763" y1="83.8635" x2="294.355" y2="108.264" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FF007D" />
+                            <stop offset="1" stop-color="#B627DC" />
+                        </linearGradient>
+                    </defs>
+                </svg>
             </div>
-            <!-- breadcumb -->
+            <!-- breadcrumb end -->
 
-            <!-- section 1 -->
-            <div class="container about-section1">
-                <div class="row justify-content-between">
-                    <div class="col-md-5 px-lg-0 px-xl-0 px-xxl-0">
-                        <p class="title my-0">SELIM FRESKO</p>
-                        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-                        <p class="my-0 details">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae odio sit nibh tempor tortor, phasellus penatibus in. Tortor et, rhoncus ipsum vel id venenatis. At in fermentum enim, congue nunc sed lectus odio diam. Neque etiam aenean et duis nunc. Fames aliquam tincidunt habitant egestas et. Aenean auctor rhoncus sollicitudin tellus odio dolor ultrices. Maecenas viverra <br /><br />
-                            Nisl, nunc quis aliquet elementum volutpat lorem. Orci sed mauris consequat enim viverra. Quis eros nibh adipiscing massa. Suspendisse est massa purus, <br /><br />
-                            nulla scelerisque diam id netus magna lorem. Ut sit rhoncus nunc cursus auctor. Quam vitae scelerisque eget vel. In aliquet lacus sed ut dictum auctor tempor. In in mollis augue erat dui tristique tristique volutpat.
-                        </p>
-                        <div class="social-links">
-                            <a href="" class=""><i class="fab fa-facebook-f"></i></a>
-                            <a href="" class=""><i class="fab fa-instagram"></i></a>
-                            <a href="" class=""><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 px-lg-0 px-xl-0 px-xxl-0">
-                        <img class="w-100" src="assets/images/about-demo.png" alt="" />
-                    </div>
-                </div>
-            </div>
-            <div class="container about-section2">
-                <div class="row justify-content-between">
-                    <div class="col-md-6 px-lg-0 px-xl-0 px-xxl-0">
-                        <img class="w-100" src="assets/images/about-demo.png" alt="" />
-                    </div>
-                    <div class="col-md-5 px-lg-0 px-xl-0 px-xxl-0">
-                        <p class="title my-0">Selim Fresko</p>
-                        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-                        <p class="my-0 details">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae odio sit nibh tempor tortor, phasellus penatibus in. Tortor et, rhoncus ipsum vel id venenatis. At in fermentum enim, congue nunc sed lectus odio diam. Neque etiam aenean et duis nunc. Fames aliquam tincidunt habitant egestas et. Aenean auctor rhoncus sollicitudin tellus odio dolor ultrices. Maecenas viverra <br /><br />
-                            Nisl, nunc quis aliquet elementum volutpat lorem. nibh adipiscing massa. Suspendisse est purus, <br /><br />
-                            nulla scelerisque diam id netus magna lorem. Ut sit rhoncus nunc cursus auctor. Quam vitae scelerisque eget vel. In aliquet lacus sed ut dictum auctor tempor. In in mollis augue erat dui tristique tristique volutpat.
-                        </p>
-                        <div class="social-links">
-                            <a href="" class=""><i class="fab fa-facebook-f"></i></a>
-                            <a href="" class=""><i class="fab fa-instagram"></i></a>
-                            <a href="" class=""><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- section 1 -->
-
-            <!-- top artist -->
-            <div class="container section2-container-3 px-lg-0">
-                <div class="d-flex justify-content-between align-items-center section-heading">
-                    <h2 class="my-0">Meet Our Top Artists</h2>
-                    <img class="h-100" src="assets/images/line1.png" alt="" />
-                </div>
-                <div class="artist-loop owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="col-md-12 d-flex justify-content-center">
-                            <div>
-                                <img src="assets/images/top-artist/ta1.png" alt="" />
-                                <p class="my-0">Jean Garrett</p>
+            <!-- product list -->
+            <div class="cart-product-list bg-light">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 bg-white cart">
+                            <div class="row cart-heading">
+                                <div class="col-6">
+                                    <p class="my-0">Painting</p>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <p class="my-0">Price</p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="col-md-12 d-flex justify-content-center">
-                            <div>
-                                <img src="assets/images/top-artist/ta2.png" alt="" />
-                                <p class="my-0">Arnold Banks</p>
+                            <div class="row cart-body">
+                                <div class="col-6 d-flex align-items-center">
+                                    <img class="product-image" src="assets/images/art/demo3.png" alt="" />
+                                    <a href="view-product.blade.html" class="text-decoration-none">La Réunion Acryilic</a>
+                                </div>
+                                <div class="col-6 d-flex align-items-center justify-content-end">
+                                    <p class="my-0">$400</p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="col-md-12 d-flex justify-content-center">
-                            <div>
-                                <img src="assets/images/top-artist/ta3.png" alt="" />
-                                <p class="my-0">Sherman Mitchell</p>
+                            <div class="row cart-body">
+                                <div class="col-6 d-flex align-items-center">
+                                    <img class="product-image" src="assets/images/art/art2.png" alt="" />
+                                    <a href="view-product.blade.html" class="text-decoration-none">Newborn Acryilic</a>
+                                </div>
+                                <div class="col-6 d-flex align-items-center justify-content-end">
+                                    <p class="my-0">$1,200</p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="col-md-12 d-flex justify-content-center">
-                            <div>
-                                <img src="assets/images/top-artist/ta4.png" alt="" />
-                                <p class="my-0">Andrea Moore</p>
+                            <div class="row cart-body">
+                                <div class="col-6 d-flex align-items-center">
+                                    <img class="product-image" src="assets/images/footer1.png" alt="" />
+                                    <a href="view-product.blade.html" class="text-decoration-none">Water lily lake Acryilic</a>
+                                </div>
+                                <div class="col-6 d-flex align-items-center justify-content-end">
+                                    <p class="my-0">$10,000</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- top artist -->
+            <!-- product list -->
         </div>
-
         <!-- footer start -->
         <div class="footer">
             <div class="container">
@@ -251,53 +229,3 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"></script>
 <!-- cdn scripts -->
-
-<script>
-    jQuery(document).ready(function ($) {
-        $(".artist-loop").owlCarousel({
-            loop: true,
-            margin: 50,
-            responsive: {
-                300: {
-                    items: 1,
-                },
-                500: {
-                    items: 1,
-                },
-                800: {
-                    items: 2,
-                },
-                1000: {
-                    items: 3,
-                },
-                1200: {
-                    items: 4,
-                },
-                1300: {
-                    items: 4,
-                },
-                1400: {
-                    items: 4,
-                },
-                1700: {
-                    items: 4,
-                },
-                1800: {
-                    items: 4,
-                },
-                1900: {
-                    items: 4,
-                },
-                2000: {
-                    items: 4,
-                },
-                2100: {
-                    items: 4,
-                },
-                2200: {
-                    items: 4,
-                },
-            },
-        });
-    });
-</script>

@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Astratta | Home</title>
+        <title>Astratta | Join Us</title>
         <!-- cdn links -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
@@ -86,45 +86,53 @@
         </nav>
         <!-- navbar end -->
         <div class="container-fluid px-0 bg-white d-flex">
-            <div class="form-section">
+            <div class="form-section join-us">
                 <div class="container px-0">
                     <div class="row justify-content-between mx-auto">
                         <div class="form-left-side-container col-lg-8 col-xl-8 col-xxl-8 col-md-12"></div>
                         <div class="form-right-side-container col-lg-4 col-xl-4 col-xxl-4 col-md-12 d-flex justify-content-lg-end pe-lg-0 pe-xl-0 pe-xxl-0">
                             <div class="form-right-side px-0">
-                                <h1 class="my-0">Sign Up</h1>
+                                <h1 class="my-0">Join Us</h1>
                                 <form action="" method="POST">
                                     <!-- @csrf -->
                                     <div class="inputGroup px30">
                                         <label for="username">Username</label>
-                                        <input type="text" id="username" class="px-0 form-control rounded-0 border-0 border-bottom border-secondary shadow-none" placeholder="johndoe" />
+                                        <input type="text" id="username" name="username" class="px-0 form-control rounded-0 border-0 border-bottom border-secondary shadow-none" placeholder="johndoe" />
                                     </div>
                                     <div class="inputGroup px30">
                                         <label for="email">Email</label>
-                                        <input type="email" id="email" class="px-0 form-control rounded-0 border-0 border-bottom border-secondary shadow-none" placeholder="info@enample.com" />
+                                        <input type="email" id="email" name="email" class="px-0 form-control rounded-0 border-0 border-bottom border-secondary shadow-none" placeholder="info@enample.com" />
+                                    </div>
+                                    <div class="inputGroup px30">
+                                        <label for="phone">Phone</label>
+                                        <input type="tel" id="phone" name="phone" class="px-0 form-control rounded-0 border-0 border-bottom border-secondary shadow-none" placeholder="830-541-2357" />
                                     </div>
                                     <div class="inputGroup px30">
                                         <label for="password">Password</label>
-                                        <input type="password" id="password" class="px-0 form-control rounded-0 border-0 border-bottom border-secondary shadow-none" placeholder="Enter your password" />
+                                        <input type="password" id="password" name="password" class="px-0 form-control rounded-0 border-0 border-bottom border-secondary shadow-none" placeholder="Enter your password" />
                                     </div>
-                                    <div class="inputGroup px20">
+                                    <div class="inputGroup px30">
                                         <label for="confirm-password">Confirm Password</label>
-                                        <input type="password" id="confirm-password" class="px-0 form-control rounded-0 border-0 border-bottom border-secondary shadow-none" placeholder="Enter your password again" />
+                                        <input type="password" id="confirm-password" name="confirm_password" class="px-0 form-control rounded-0 border-0 border-bottom border-secondary shadow-none" placeholder="Enter your password again" />
+                                    </div>
+                                    <div class="inputGroup px30">
+                                        <label for="image" class="pb-2">Your Paintings</label>
+                                        <input type="file" id="image" name="image" class="shadow-none" />
+                                    </div>
+                                    <div class="inputGroup form-check px15">
+                                        <div class="d-flex align-items-center">
+                                            <input type="checkbox" name="privacy" class="form-check-input" id="privary-policy" />
+                                            <label class="form-check-label" for="privary-policy">I agree to the <a href="">privary policy</a></label>
+                                        </div>
                                     </div>
                                     <div class="inputGroup form-check px30">
                                         <div class="d-flex align-items-center">
-                                            <input type="checkbox" class="form-check-input" id="rememberme" />
-                                            <label class="form-check-label" for="rememberme">I agree to the <a href="">privary policy</a></label>
+                                            <input type="checkbox" name="agreement" class="form-check-input" id="agreement" />
+                                            <label class="form-check-label" for="agreement">I agree to the <a href="">contact</a></label>
                                         </div>
                                     </div>
-                                    <a href="javascript:void();" class="btn rounded-0 border-0 login">CREATE ACCOUNT</a>
+                                    <a href="javascript:void();" class="btn rounded-0 border-0 login">SEND FOR REVIEW</a>
                                     <a href="sign-in.blade.html" class="sub-link">Sign In Insted</a>
-                                    <div class="d-flex justify-content-between align-items-center or">
-                                        <hr />
-                                        <small>Or</small>
-                                        <hr />
-                                    </div>
-                                    <a href="join-us.blade.html" class="btn rounded-0 sign-in-button create-account">JOIN AS AN ARTIST</a>
                                 </form>
                             </div>
                         </div>

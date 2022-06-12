@@ -1362,17 +1362,264 @@ textarea{
 /* view artist */
 
 /* sign in page */
-.sign-in-section{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(90deg, #FF6DC5 892px, white 50%);
+@media screen and (min-width: 320px) and (max-width: 485px) {
+    .navbar{
+        width: fit-content !important;
+    }
 }
-.sign-in-right-side{
-    float: right;
-    width: 398px;
+@media screen and (min-width: 320px) and (max-width: 995px) {
+    .form-left-side-container {
+        height: auto !important;
+    }
+
+    .form-right-side-container {
+        height: auto !important;
+    }
+    .form-right-side{
+        width: 100% !important;
+    }
+    .form-right-side .login{
+        width: 100% !important;
+    }
+    .form-right-side .create-account{
+        margin-left: 0px !important;
+        width: 100% !important;
+    }
+    .form-section {
+        background-image: linear-gradient(90deg, #ffffff 60.3%, white 50%) !important;
+    }
+
+    /* media-join-us */
+    .join-us {
+        background-image: linear-gradient(90deg, #ffffff 60.3%, white 50%) !important;
+    }
+
+    .join-us .form-left-side-container {
+        background-color: #FF6DC5;
+        height: auto !important;
+    }
+
+    .join-us .form-right-side-container {
+        background-color: #FFFFFF;
+        height: auto;
+    }
+    /* media-join-us */
+}
+.form-left-side-container{
+    background-color: #FF6DC5;
+    height: 930px;
+}
+.form-right-side-container{
+    background-color: #FFFFFF;
+    height: 930px;
+}
+.form-section{
+    width: 100%;
+    height: 930px;
+    background-image: linear-gradient(90deg, #FF6DC5 60.3%, white 50%);
+}
+.form-right-side{
+    width: 308px;
     background-color: white !important;
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+.form-right-side h1{
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+    margin-bottom: 55px !important;
+}
+.form-right-side .inputGroup input{
+    padding: 0 !important;
+    padding-bottom: 3px !important;
+}
+.form-right-side .inputGroup label{
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #000000;
+}
+.form-right-side .px30{
+    margin-bottom: 30px !important;
+}
+.form-right-side .px15{
+    margin-bottom: 15px !important;
+}
+.form-right-side .px20 {
+    margin-bottom: 20px !important;
+}
+.join-us .form-right-side .sub-link{
+    margin-bottom: 0px !important;
+}
+.form-right-side .sub-link{
+    margin-top: 26px;
+    margin-bottom: 33px;
+    display: block;
+
+    font-family: 'Crucial' !important;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.form-right-side .inputGroup{
+    border-color: #00000059 !important;
+}
+.form-right-side .inputGroup .form-check-input{
+    height: 10px !important;
+    width: 10px !important;
+
+    border: 1px solid rgba(0, 0, 0, 0.55) !important;
+    border-radius: 1.42857px !important;
+}
+.form-right-side .inputGroup .form-check-label a{
+    text-decoration: none;
+    color: #FE017F !important;
+}
+.form-right-side .inputGroup .form-check-label{
+    font-family: 'Source Sans Pro' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 10px !important;
+    line-height: 13px !important;
+    margin-left: 7px !important;
+    color: rgba(0, 0, 0, 0.4) !important;
+}
+.form-right-side .inputGroup :focus{
+    border-color: #FA0486 !important;
+}
+.form-right-side .inputGroup ::placeholder{
+    font-family: 'Source Sans Pro' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    line-height: 19px !important;
+    color: #0000004d !important;
+}
+.form-right-side .login{
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center !important;
+    align-items: center;
+    padding: 12px 39px 9px;
+    gap: 10px;
+ 
+    width: 307.34px;
+    height: 40px;
+    left: 982px;
+    top: 494px;
+    background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%);
+}
+.form-right-side .or {
+    margin-bottom: 36px !important;
+}
+.form-right-side .or hr {
+    width: 127px !important;
+}
+.form-right-side .or small {
+    font-family: 'Crucial' !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    line-height: 14px !important;
+    text-transform: capitalize !important;
+
+    color: #000000 !important;
+}
+.form-right-side .create-account{
+    width: 307.34px;
+    font-size: 16px !important;
+    letter-spacing: 0.045em;
+    margin-left: auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* sign in page */
+
+/* join us */
+.join-us {
+    height: 986px;
+}
+
+.join-us .form-left-side-container {
+    background-color: #FF6DC5;
+    height: 986px;
+}
+
+.join-us .form-right-side-container {
+    background-color: #FFFFFF;
+    height: 986px;
+}
+/* join us */
+
+/* my cart */
+.cart{
+    padding: 40px;
+}
+.cart-heading{
+    margin-bottom: 30px;
+}
+.cart-heading p{
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+}
+.cart-body{
+    padding: 15px 0px;
+}
+.cart-body .product-image{
+    width: 55px;
+    height: 67.2px;
+    border-radius: 0px;
+    padding: 3px;
+    box-shadow: inset 0px 0px 0px 1.26225px #000000, inset 0px 0px 0px 6.31124px #ffffff !important;
+    filter: drop-shadow(-4.20749px 4.20749px 12.6225px rgba(0, 0, 0, 0.1)) !important;
+}
+.cart-body a{
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+    margin-left: 20px;
+}
+.cart-body p{
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: right;
+    color: #000000;
+}
+/* my cart */
 
 /* ---------------------------------------------------------------------------------------------------- */
 

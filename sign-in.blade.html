@@ -11,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
         <!-- cdn links -->
 
         <!-- local link -->
@@ -37,7 +38,7 @@
                     <a href="javascript:void();" class="">
                         <img src="assets/images/icons/phone.png" alt="" />
                     </a>
-                    <a href="javascript:void();" class="">
+                    <a href="my-cart.blade.html" class="">
                         <img src="assets/images/icons/cart.png" alt="" />
                     </a>
                     <a href="javascript:void();" class="">
@@ -66,7 +67,7 @@
                             <a href="javascript:void();" class="">
                                 <img src="assets/images/icons/phone.png" alt="" />
                             </a>
-                            <a href="javascript:void();" class="">
+                            <a href="my-cart.blade.html" class="">
                                 <img src="assets/images/icons/cart.png" alt="" />
                             </a>
                             <div class="dropdown">
@@ -85,16 +86,39 @@
         </nav>
         <!-- navbar end -->
         <div class="container-fluid px-0 bg-white d-flex">
-            <div class="sign-in-section">
+            <div class="form-section">
                 <div class="container px-0">
-                    <div class="row justify-content-lg-end">
-                        <div class="col- sign-in-right-side">
-                            <form action="" method="POST">
-                                <!-- @csrf -->
-                                <div class="input-group">
-                                    input.form-control
-                                </div>
-                            </form>
+                    <div class="row justify-content-between mx-auto">
+                        <div class="form-left-side-container col-lg-8 col-xl-8 col-xxl-8 col-md-12"></div>
+                        <div class="form-right-side-container col-lg-4 col-xl-4 col-xxl-4 col-md-12 d-flex justify-content-lg-end pe-lg-0 pe-xl-0 pe-xxl-0">
+                            <div class="form-right-side px-0">
+                                <h1 class="my-0">Sign In</h1>
+                                <form action="" method="POST">
+                                    <!-- @csrf -->
+                                    <div class="inputGroup px30">
+                                        <label for="username">Username / Email</label>
+                                        <input type="text" id="username" class="px-0 form-control rounded-0 border-0 border-bottom border-secondary shadow-none" placeholder="info@example.com" />
+                                    </div>
+                                    <div class="inputGroup px20">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" class="px-0 form-control rounded-0 border-0 border-bottom border-secondary shadow-none" placeholder="Enter your password here" />
+                                    </div>
+                                    <div class="inputGroup form-check px30">
+                                        <div class="d-flex align-items-center">
+                                            <input type="checkbox" class="form-check-input" id="rememberme" />
+                                            <label class="form-check-label" for="rememberme">Remember me</label>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:void();" class="btn rounded-0 border-0 login">LOGIN</a>
+                                    <a href="javascript:void();" class="sub-link">Forget Password?</a>
+                                    <div class="d-flex justify-content-between align-items-center or">
+                                        <hr />
+                                        <small>Or</small>
+                                        <hr />
+                                    </div>
+                                    <a href="sign-up.blade.html" class="btn rounded-0 sign-in-button create-account">CREATE ACCOUNT</a>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
