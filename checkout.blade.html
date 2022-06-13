@@ -86,12 +86,12 @@
             </div>
         </nav>
         <!-- navbar end -->
-        <div class="container-fluid px-0 bg-white" id="custom-breadcrumb">
+        <div class="container-fluid px-0 bg-white checkout-page" id="custom-breadcrumb">
             <!-- breadcrumb start -->
             <div class="breadcrumb">
                 <div class="container d-flex align-items-center px-0">
                     <div class="bct">
-                        <h1 class="my-0">Cart</h1>
+                        <h1 class="my-0">Checkout</h1>
                     </div>
                 </div>
                 <svg width="475" height="288" viewBox="0 0 475 288" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -113,6 +113,72 @@
             </div>
             <!-- breadcrumb end -->
 
+            <div class="billing-details bg-light">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 bg-white billing-cart">
+                            <h3 class="my-0 mb35">Billing Detials</h3>
+                            <div class="row justify-content-between">
+                                <div class="col-md-6 mb30">
+                                    <div class="inputGroup">
+                                        <label for="name">Name</label>
+                                        <input id="name" type="text" class="form-control border-0 border-bottom border-secondary rounded-0 shadow-none px-0 pb-1 pt-0" placeholder="John Doe" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb30">
+                                    <div class="inputGroup">
+                                        <label for="last-name">Last Name</label>
+                                        <input id="last-name" type="text" class="form-control border-0 border-bottom border-secondary rounded-0 shadow-none px-0 pb-1 pt-0" placeholder="John Doe" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb30">
+                                    <div class="inputGroup">
+                                        <label for="phone">Phone</label>
+                                        <input id="phone" type="tel" class="form-control border-0 border-bottom border-secondary rounded-0 shadow-none px-0 pb-1 pt-0" placeholder="John Doe" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb30">
+                                    <div class="inputGroup">
+                                        <label for="email">Email</label>
+                                        <input id="email" type="email" class="form-control border-0 border-bottom border-secondary rounded-0 shadow-none px-0 pb-1 pt-0" placeholder="John Doe" />
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb30">
+                                    <div class="inputGroup">
+                                        <label for="country">Country</label>
+                                        <input id="country" type="text" class="form-control border-0 border-bottom border-secondary rounded-0 shadow-none px-0 pb-1 pt-0" placeholder="John Doe" />
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb30">
+                                    <div class="inputGroup">
+                                        <label for="state">State</label>
+                                        <input id="state" type="text" class="form-control border-0 border-bottom border-secondary rounded-0 shadow-none px-0 pb-1 pt-0" placeholder="John Doe" />
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb30">
+                                    <div class="inputGroup">
+                                        <label for="town-city">Town / City</label>
+                                        <input id="town-city" type="text" class="form-control border-0 border-bottom border-secondary rounded-0 shadow-none px-0 pb-1 pt-0" placeholder="John Doe" />
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb30">
+                                    <div class="inputGroup">
+                                        <label for="street">Street Address</label>
+                                        <input id="street" type="text" class="form-control border-0 border-bottom border-secondary rounded-0 shadow-none px-0 pb-1 pt-0" placeholder="John Doe" />
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="inputGroup">
+                                        <label for="post-or-zip">Postcode / ZIP (Optional)</label>
+                                        <input id="post-or-zip" type="text" class="form-control border-0 border-bottom border-secondary rounded-0 shadow-none px-0 pb-1 pt-0" placeholder="John Doe" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- product list -->
             <div class="cart-product-list bg-light">
                 <div class="container">
@@ -120,7 +186,7 @@
                         <div class="col-md-8 bg-white cart">
                             <div class="row cart-heading">
                                 <div class="col-6">
-                                    <p class="my-0">Painting</p>
+                                    <p class="my-0">Your Order</p>
                                 </div>
                                 <div class="col-6 text-end">
                                     <p class="my-0">Price</p>
@@ -165,58 +231,63 @@
                                     </div>
                                 </div>
                             </label>
+                            <div class="checkout-total bg-white">
+                                <hr class="mb10" style="opacity: 1 !important" />
+                                <div class="d-flex discounted justify-content-between mb10">
+                                    <p class="my-0 discounted-title">Discounted</p>
+                                    <p class="my-0 discounted-amount">$11,600</p>
+                                </div>
+                                <div class="d-flex shipping justify-content-between mb10">
+                                    <p class="my-0 shipping-title">Shipping to Dhaka</p>
+                                    <p class="my-0 shipping-amount">$20</p>
+                                </div>
+                                <div class="d-flex shipping justify-content-between">
+                                    <p class="my-0 total-title">Total</p>
+                                    <p class="my-0 total-amount d-flex align-items-center justify-content-end">$11,620</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- product list -->
 
-            <!-- apply coupon -->
-            <div class="apply-coupon bg-light">
-                <div class="container px-lg-0 px-xl-0 px-xxl-0">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8">
-                            <div class="coupon-body bg-white">
-                                <form action="" method="POST" class="d-flex">
-                                    <input type="text" name="coupon_code" class="form-control rounded-0 shadow-none" placeholder="Coupon Code" />
-                                    <button class="btn rounded-0 sign-in-button" type="submit">Apply Coupon</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- apply coupon -->
-
             <!-- cart total -->
-            <div class="cart-total bg-light">
+            <div class="cart-payment bg-light">
                 <div class="container px-lg-0 px-xl-0 px-xxl-0">
                     <div class="row justify-content-center">
                         <div class="col-md-8">
-                            <div class="cart-total-body bg-white">
-                                <h3 class="my-0">Cart Total</h3>
-                                <div class="d-flex subtotal justify-content-between mb25">
-                                    <p class="my-0 subtotal-title">Subtotal</p>
-                                    <p class="my-0 subtotal-amount">$11,600</p>
+                            <div class="cart-payment-body bg-white">
+                                <div class="row payment-heading">
+                                    <div class="col-6">
+                                        <p class="my-0">Pay</p>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <p class="my-0">$11,620</p>
+                                    </div>
                                 </div>
-                                <div class="d-flex discounted justify-content-between mb25">
-                                    <p class="my-0 discounted-title">Discounted</p>
-                                    <p class="my-0 discounted-amount">$11,600</p>
-                                </div>
-                                <div class="d-flex shipping justify-content-between mb25">
-                                    <p class="my-0 shipping-title">Shipping to <span class="shipping-location">Dhaka</span></p>
-                                    <p class="my-0 shipping-amount">$20</p>
-                                </div>
-                                <hr class="mb25" />
-                                <div class="d-flex shipping justify-content-between mb25">
-                                    <p class="my-0 shipping-title">Total</p>
-                                    <p class="my-0 shipping-amount d-flex align-items-center justify-content-end">
-                                        $
-                                        <input class="bg-transparent px-0 border-0 text-end form-control rounded-0 shadow-none w-25" id="total" type="number" name="total" min="1" value="11620" readonly />
+                                <div class="payment-body">
+                                    <p class="my-0 payment-notice mb30">
+                                        Your personal data will be used to process your order, support your <br />
+                                        experience throughout this website, and for other purposes described in our privacy policy.
                                     </p>
-                                </div>
 
-                                <a href="checkout.blade.html" class="d-flex align-items-center justify-content-center w-100 btn rounded-0 border-0 sign-up-button checkout-button">Proceed To Checkout</a>
+                                    <div class="method mb40">
+                                        <a href="javascript::void();" class="d-flex justify-content-start align-items-center btn rounded-0 border-0 shadow-none w-100 bg-light payment-button mb30" type="button" data-bs-toggle="collapse" data-bs-target="#checkPaymentcollaspe" aria-expanded="false" aria-controls="checkPaymentcollaspe">Check Payment</a>
+                                        <div class="collapse collapse-vertical mb30" id="checkPaymentcollaspe">
+                                            <div class="card card-body" style="width: 300px">This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.</div>
+                                        </div>
+                                        <a href="javascript::void();" class="d-flex justify-content-start align-items-center btn rounded-0 border-0 shadow-none w-100 bg-light payment-button mb30" type="button" data-bs-toggle="collapse" data-bs-target="#cardPaymentcollaspe" aria-expanded="false" aria-controls="cardPaymentcollaspe">Card Payment</a>
+                                        <div class="collapse collapse-vertical mb30" id="cardPaymentcollaspe">
+                                            <div class="card card-body" style="width: 300px">This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.</div>
+                                        </div>
+                                        <a href="javascript::void();" class="d-flex justify-content-start align-items-center btn rounded-0 border-0 shadow-none w-100 bg-light payment-button mb30" type="button" data-bs-toggle="collapse" data-bs-target="#paypalPaymentcollaspe" aria-expanded="false" aria-controls="paypalPaymentcollaspe">Paypal</a>
+                                        <div class="collapse collapse-vertical mb30" id="paypalPaymentcollaspe">
+                                            <div class="card card-body" style="width: 300px">This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.</div>
+                                        </div>
+                                    </div>
+                                    <a href="checkout.blade.html" class="d-flex align-items-center justify-content-center w-100 btn rounded-0 border-0 sign-up-button checkout-button">Proceed</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -295,6 +366,18 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"></script>
 <!-- cdn scripts -->
+<script>
+    $(function () {
+        $("input:radio").click(function (e) {
+            e.stopPropagation();
+            $("li").removeClass("active");
+            $(this).parent().parent().addClass("active");
+        });
+        $("a").click(function (e) {
+            $(this).children().trigger("click");
+        });
+    });
+</script>
 <script>
     $("input[type=checkbox]").on("change", function () {
         var $chk = $(this),

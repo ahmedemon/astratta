@@ -1579,8 +1579,11 @@ textarea{
 /* join us */
 
 /* my cart */
+.checkout-page .cart{
+    margin-bottom: 96px;
+}
 .cart{
-    padding: 40px;
+    padding: 40px 40px 30px 40px;
     box-shadow: 0px 0px 46px #0000000a;
 }
 .row-label{
@@ -1614,8 +1617,14 @@ textarea{
     color: white !important;
 }
 /* select product */
+#custom-breadcrumb .breadcrumb{
+    height: 235px !important;
+}
+#custom-breadcrumb .breadcrumb svg{
+    height: 235px !important;
+}
 .cart-heading{
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 .cart-heading p{
     font-family: 'Crucial' !important;
@@ -1691,11 +1700,29 @@ textarea{
 /* coupon code */
 
 /* cart total */
+.mb35{
+    margin-bottom: 35px !important;
+}
+.mb30{
+    margin-bottom: 30px !important;
+}
 .mb25{
-    margin-bottom: 25px;
+    margin-bottom: 25px !important;
+}
+.mb20{
+    margin-bottom: 20px !important;
+}
+.mb15{
+    margin-bottom: 15px !important;
+}
+.mb10{
+    margin-bottom: 10px !important;
+}
+.mb5{
+    margin-bottom: 5px !important;
 }
 .mb40{
-    margin-bottom: 40px;
+    margin-bottom: 40px !important;
 }
 .cart-total h3{
     font-family: 'Crucial' !important;
@@ -1758,6 +1785,17 @@ textarea{
 .shipping .shipping-location{
     color: #CE4899;
 }
+.checkout-total > .subtotal-title, .subtotal-amount, .discounted-amount, .discounted-title, .shipping-title, .shipping-amount{
+    font-size: 18px !important;
+}
+.checkout-total .total-title, .total-amount{
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #CE4899;
+}
 .cart-total-body hr{
     opacity: 1 !important;
 }
@@ -1766,7 +1804,94 @@ textarea{
     height: 50px;
     margin-left: 0px;
 }
+
+.payment-button{
+    height: 60px !important;
+    background-color: #F2F2F2 !important;
+    padding-left: 20px !important;
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+}
 /* cart total */
+
+/* billing details */
+.billing-details{
+    padding-top: 96px;
+}
+.billing-cart{
+    padding: 40px;
+}
+.billing-cart h3{
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+.billing-cart .inputGroup label{
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+}
+.billing-cart .col-md-6{
+    width: 332px !important;
+}
+.billing-cart .inputGroup .form-control::placeholder{
+    font-family: 'Source Sans Pro' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 320px) and (max-width: 995px) {
+    .billing-details{
+        padding-top: 0px !important;
+    }
+    .billing-cart .col-md-6 {
+        width: auto !important;
+    }
+    #custom-breadcrumb{
+        width: fit-content !important;
+    }
+}
+/* billing details */
+
+/* payment section */
+.cart-payment{
+    padding-bottom: 96px;
+}
+.cart-payment-body{
+    padding: 40px;
+}
+.payment-heading{
+    margin-bottom: 35px;
+}
+.cart-payment-body .payment-heading p{
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+.cart-payment-body .payment-body .payment-notice{
+    font-family: 'Montserrat' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+/* payment section */
 
 /* ---------------------------------------------------------------------------------------------------- */
 
@@ -1932,11 +2057,11 @@ textarea{
     .section2 .section2-container-1 .col-md-4:nth-child(1) img {
         background: #6DC700 !important;
     }
-
+    
     .section2 .section2-container-1 .col-md-4:nth-child(2) img {
         background: #FF6DC5 !important;
     }
-
+    
     .section2 .section2-container-1 .col-md-4:nth-child(3) img {
         background: #4A00C7 !important;
     }
@@ -1955,7 +2080,7 @@ textarea{
     }
 
     .section2-container-2 {
-        margin-bottom: 96px;
+        margin-bottom: auto !important;
     }
     .section2-container-2 .painting h3 { 
         font-size: 18px;
@@ -2000,6 +2125,13 @@ textarea{
     /* home page */
 
     /* painting page */
+    .become-an-artist{
+        margin-top: 15px !important;
+        margin-bottom: 50px !important;
+    }
+    .view-artist{
+        margin-top: 15px !important;
+    }
     .become-an-artist h1{
         font-size: 20px !important;
     }
@@ -2013,7 +2145,16 @@ textarea{
     .artist-section .artist-loop .col-6 {
         margin-bottom: 50px !important;
     }
-    .best-selling-container{
+    /* .best-selling-container{
+        width: auto !important;
+    } */
+    .view-artist .right-side{
+        margin-bottom: auto !important;
+    }
+    .view-artist .right-side .painting{
+        width: 50% !important;
+    }
+    .view-artist .right-side .painting h3{
         width: auto !important;
     }
     .section2-container-2 .painting h3{
@@ -2021,7 +2162,7 @@ textarea{
         width: auto !important;
     }
     .section2-container-2 .painting img {
-        height: auto;
+        height: auto !important;
         width: 100% !important;
     }
     .section2-container-2 .col-lg-4{
@@ -2106,6 +2247,9 @@ textarea{
     }
 
     /* product view page */
+    .product-section1 h1{
+        width: auto !important;
+    }
     .product-section1 .content{
         margin-top: 20px !important;
         margin-bottom: 20px !important;
@@ -2130,6 +2274,19 @@ textarea{
         margin-top: 20px !important;
     }
     /* product view page */
+
+    /* cart-media */
+    .cart-product-list{
+        padding-top: 0px !important;
+    }
+    .coupon-body .sign-in-button {
+        font-size: 12px !important;
+    }
+    .cart-total-body{
+        margin-bottom: auto !important;
+    }
+    /* cart-media */
+
 
     /* footer section */
     .footer .container{
