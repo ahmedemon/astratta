@@ -1705,16 +1705,31 @@ textarea{
 /* cart total */
 
 /* paddings local */
+.pt15{
+    padding-top: 15px;
+}
+.p40{
+    padding: 40px;
+}
+.px40{
+    padding: 40px;
+}
 .pb96 {
     padding-bottom: 96px;
 }
-
 .pt96 {
     padding-top: 96px;
+}
+.py96 {
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 /* paddings local */
 
 /* paddings important */
+.pt15-important{
+    padding-top: 15px;
+}
 .pb96-important {
     padding-bottom: 96px !important;
 }
@@ -1762,9 +1777,15 @@ textarea{
 .mb40{
     margin-bottom: 40px;
 }
+.mt15{
+    margin-bottom: 40px;
+}
 /* margins local */
 
 /* margins important */
+.mt15-important{
+    margin-bottom: 15px !important;
+}
 .mb35-important{
     margin-bottom: 35px !important;
 }
@@ -1960,6 +1981,50 @@ textarea{
 /* payment section */
 
 /* thank you page */
+@media screen and (min-width:320px) and (max-width:995px) {
+    .thank-you-greetings {
+        padding-top: 15px !important;
+    }
+    .items-heading{
+        margin-bottom: 20px !important;
+    }
+    .rescript {
+        padding-bottom: 15px !important;
+    }
+    .address {
+        margin-bottom: 20px;
+        padding: 20px !important;
+        width: auto !important;
+    }
+    .rescript-table thead tr th {
+        font-size: 12px !important;
+        text-align: center !important;
+        padding-left: initial !important;
+        padding-right: initial !important;
+    }
+    .rescript-table tbody tr td {
+        text-align: center !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        font-size: 12px !important;
+    }
+    .ordered-items .cart-body a{
+        font-size: 25px !important;
+    }
+    .ordered-items .cart-body p{
+        font-size: 25px !important;
+    }
+    .ordered-items .shipping-billing{
+        padding: 15px 0px !important;
+    } 
+}
+
+.rescript-table thead tr th{
+    padding: 0px 14px 0px 0px;
+}
+.rescript-table tbody td td{
+    padding: 0px 14px 0px 0px;
+}
 .rescript .thank-you-greetings {
     font-family: 'Crucial' !important;
     font-style: normal;
@@ -2016,6 +2081,8 @@ textarea{
 
 .rescript-table tbody tr td:nth-child(1),.rescript-table tbody tr td:nth-child(2),.rescript-table tbody tr td:nth-child(3),.rescript-table tbody tr td:nth-child(4){
     border-right: 1px solid rgba(0, 0, 0, 0.3) !important;
+    padding-top: 25px;
+    padding-left: 0px;
 }
 .rescript-table tbody tr td:nth-child(2),.rescript-table tbody tr td:nth-child(3),.rescript-table tbody tr td:nth-child(4){
     padding-left: 50px;
@@ -2028,8 +2095,8 @@ textarea{
 }
 
 .rescript-table tbody tr td:nth-child(5){
-    padding-right: 50px;
-    text-align: right;
+    padding-left: 50px;
+    text-align: left;
     font-family: 'Crucial' !important;
     font-style: normal;
     font-weight: 500;
@@ -2037,12 +2104,82 @@ textarea{
     line-height: 26px;
     color: #000000;
     border-right: 1px solid rgba(0, 0, 0, 0.3) !important;
+    padding-top: 15px !important;
 }
 
 .rescript-table tr{
     border-style: none !important;
     border-color: transparent !important;
     border-width: unset;
+}
+.items-heading{
+    margin-bottom: 50px;
+}
+.items .items-heading p{
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px !important;
+    line-height: 40px;
+    color: #000000;
+    padding-top: 13px !important;
+}
+.shipping-billing{
+    padding-top: 75px;
+}
+.ordered-items .cart-body a, .ordered-items .cart-body p{
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34.2831px;
+    line-height: 45px;
+    color: #000000;
+}
+.ordered-items .cart-body a{
+    margin-left: 40px !important;
+}
+.ordered-items .cart-body .item-image{
+    width: 104.75px;
+    height: 128px;
+    padding: 5px;
+    box-shadow: inset 0px 0px 0px 0.905654px #000000, inset 0px 0px 0px 4.52827px #FFFFFF !important;
+    filter: drop-shadow(0px 0px 57.1385px rgba(0, 0, 0, 0.15)) !important;
+}
+.items .cart-body{
+    padding: 22px 0px !important;
+}
+
+.address {
+    width: 541px;
+    background: #ffffff !important;
+    box-shadow: 0px 0px 46px rgba(0, 0, 0, 0.07) !important;
+    
+}
+.address-heading p{
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+.address-heading a{
+    text-decoration: none;
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #CE4899;
+}
+
+.described-address p{
+    font-family: 'Montserrat' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
 }
 /* thank you page */
 
