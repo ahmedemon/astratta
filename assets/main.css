@@ -286,7 +286,7 @@ svg{
     margin-top: 96px !important;
     margin-bottom: 96px !important;
 }
-table{
+.get-in-touch table{
     width: 340px;
     height: 64px;
     font-family: 'Crucial' !important;
@@ -296,14 +296,14 @@ table{
     line-height: 32px;
     color: #000000 !important;
 }
-table td{
+.get-in-touch table td{
     padding-bottom: 30px !important;
     padding-left: 0px !important;
 }
-table .details-td{
+.get-in-touch table .details-td{
     padding-left: 24px !important;
 }
-table td i{
+.get-in-touch table td i{
     font-size: 32px;
 }
 
@@ -1617,6 +1617,9 @@ textarea{
     color: white !important;
 }
 /* select product */
+#custom-breadcrumb .breadcrumb h1{
+    margin-bottom: 0px !important;
+}
 #custom-breadcrumb .breadcrumb{
     height: 235px !important;
 }
@@ -1700,30 +1703,93 @@ textarea{
 /* coupon code */
 
 /* cart total */
+
+/* paddings local */
+.pb96 {
+    padding-bottom: 96px;
+}
+
+.pt96 {
+    padding-top: 96px;
+}
+/* paddings local */
+
+/* paddings important */
+.pb96-important {
+    padding-bottom: 96px !important;
+}
+
+.pt96-important {
+    padding-top: 96px !important;
+}
+/* paddings important */
+
+
+/* margins local */
+.mb96{
+    margin-bottom: 96px;
+}
+.mt96{
+    margin-top: 96px;
+}
+.mb96-important{
+    margin-bottom: 96px;
+}
+.mt96-important{
+    margin-top: 96px;
+}
 .mb35{
-    margin-bottom: 35px !important;
+    margin-bottom: 35px;
 }
 .mb30{
-    margin-bottom: 30px !important;
+    margin-bottom: 30px;
 }
 .mb25{
-    margin-bottom: 25px !important;
+    margin-bottom: 25px;
 }
 .mb20{
-    margin-bottom: 20px !important;
+    margin-bottom: 20px;
 }
 .mb15{
-    margin-bottom: 15px !important;
+    margin-bottom: 15px;
 }
 .mb10{
-    margin-bottom: 10px !important;
+    margin-bottom: 10px;
 }
 .mb5{
-    margin-bottom: 5px !important;
+    margin-bottom: 5px;
 }
 .mb40{
+    margin-bottom: 40px;
+}
+/* margins local */
+
+/* margins important */
+.mb35-important{
+    margin-bottom: 35px !important;
+}
+.mb30-important{
+    margin-bottom: 30px !important;
+}
+.mb25-important{
+    margin-bottom: 25px !important;
+}
+.mb20-important{
+    margin-bottom: 20px !important;
+}
+.mb15-important{
+    margin-bottom: 15px !important;
+}
+.mb10-important{
+    margin-bottom: 10px !important;
+}
+.mb5-important{
+    margin-bottom: 5px !important;
+}
+.mb40-important{
     margin-bottom: 40px !important;
 }
+/* margins important */
 .cart-total h3{
     font-family: 'Crucial' !important;
     font-style: normal;
@@ -1892,6 +1958,93 @@ textarea{
     color: #000000;
 }
 /* payment section */
+
+/* thank you page */
+.rescript .thank-you-greetings {
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    color: #000000;
+    margin-bottom: 64px !important;
+}
+.rescript-table thead tr th:nth-child(1){
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    border-left: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+
+.rescript-table thead tr th:nth-child(1),.rescript-table thead tr th:nth-child(2),.rescript-table thead tr th:nth-child(3),.rescript-table thead tr th:nth-child(4){
+    border-right: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+.rescript-table thead tr th:nth-child(2),.rescript-table thead tr th:nth-child(3),.rescript-table thead tr th:nth-child(4){
+    padding-left: 50px;
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.rescript-table thead tr th:nth-child(5){
+    padding-right: 50px;
+    text-align: right;
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    border-right: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+
+.rescript-table tbody tr td:nth-child(1){
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    border-left: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+
+.rescript-table tbody tr td:nth-child(1),.rescript-table tbody tr td:nth-child(2),.rescript-table tbody tr td:nth-child(3),.rescript-table tbody tr td:nth-child(4){
+    border-right: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+.rescript-table tbody tr td:nth-child(2),.rescript-table tbody tr td:nth-child(3),.rescript-table tbody tr td:nth-child(4){
+    padding-left: 50px;
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.rescript-table tbody tr td:nth-child(5){
+    padding-right: 50px;
+    text-align: right;
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    border-right: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+
+.rescript-table tr{
+    border-style: none !important;
+    border-color: transparent !important;
+    border-width: unset;
+}
+/* thank you page */
 
 /* ---------------------------------------------------------------------------------------------------- */
 
