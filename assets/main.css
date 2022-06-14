@@ -839,19 +839,19 @@ textarea{
     border-radius: 24px;
 }
 .shorting-section .btn:hover, .dropdown .dropdown-item:hover{
-    background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%) !important;
+    /* background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%) !important;
     border: 1px solid #ff007b70 !important;
     -webkit-background-clip: text;
     -webkit-text-fill-color: white;
-    background-clip: text;
+    background-clip: text; */
 }
 .shorting-section .btn:focus{
-    box-shadow: 0px 0px 0px 4px #ff007b40 !important;
+    /* box-shadow: 0px 0px 0px 4px #ff007b40 !important;
     background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%) !important;
     border: 1px solid #ff007b70 !important;
     -webkit-background-clip: text;
     -webkit-text-fill-color: white;
-    background-clip: text;
+    background-clip: text; */
 }
 .shorting-section .dropdown-menu {
     width: 100%;
@@ -868,11 +868,11 @@ textarea{
     border-radius: 24px;
     background-color: white;
 }
-.shorting-section .dropdown-menu .dropdown-item:hover, .shorting-section .btn:hover{
+/* .shorting-section .dropdown-menu .dropdown-item:hover, .shorting-section .btn:hover{
     background-color: #212529 !important;
     color: white;
     transition-duration: 0.3s;
-}
+} */
 /* shorting */
 
 /* paintings */
