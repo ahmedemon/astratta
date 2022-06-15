@@ -524,9 +524,16 @@ textarea{
     margin-right: -15px !important;
 }
 .total-artist small{
-    color: white;
-    font-size: 11px;
     margin-left: 25px !important;
+
+    /* font-family: 'Source Sans Pro' !important; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 14px;
+
+    color: rgba(255, 255, 255, 0.8);
+
 }
 
 .art-demo{
@@ -724,7 +731,7 @@ textarea{
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
-    margin-top: 23px !important;
+    margin-top: 17px !important;
 }
 .blog-site .title{
     font-family: 'Crucial' !important;
@@ -1747,16 +1754,14 @@ textarea{
 
 
 /* margins local */
+.my96{
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
 .mb96{
     margin-bottom: 96px;
 }
 .mt96{
-    margin-top: 96px;
-}
-.mb96-important{
-    margin-bottom: 96px;
-}
-.mt96-important{
     margin-top: 96px;
 }
 .mb35{
@@ -1795,6 +1800,17 @@ textarea{
 /* margins local */
 
 /* margins important */
+.my96-important {
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+.mb96-important {
+    margin-bottom: 96px;
+}
+
+.mt96-important {
+    margin-top: 96px;
+}
 .mt15-important{
     margin-bottom: 15px !important;
 }
@@ -2059,7 +2075,6 @@ textarea{
     font-size: 20px;
     line-height: 26px;
     color: #000000;
-    border-left: 1px solid rgba(0, 0, 0, 0.3) !important;
 }
 
 .rescript-table thead tr th:nth-child(1),.rescript-table thead tr th:nth-child(2),.rescript-table thead tr th:nth-child(3),.rescript-table thead tr th:nth-child(4){
@@ -2084,7 +2099,6 @@ textarea{
     font-size: 20px;
     line-height: 26px;
     color: #000000;
-    border-right: 1px solid rgba(0, 0, 0, 0.3) !important;
 }
 
 .rescript-table tbody tr td:nth-child(1){
@@ -2094,7 +2108,6 @@ textarea{
     font-size: 20px;
     line-height: 26px;
     color: #000000;
-    border-left: 1px solid rgba(0, 0, 0, 0.3) !important;
 }
 
 .rescript-table tbody tr td:nth-child(1),.rescript-table tbody tr td:nth-child(2),.rescript-table tbody tr td:nth-child(3),.rescript-table tbody tr td:nth-child(4){
@@ -2121,7 +2134,6 @@ textarea{
     font-size: 20px;
     line-height: 26px;
     color: #000000;
-    border-right: 1px solid rgba(0, 0, 0, 0.3) !important;
     padding-top: 15px !important;
 }
 
@@ -2322,6 +2334,204 @@ textarea{
 }
 /* my account page */
 
+/* blogs page */
+.blogs-page .blog-site{
+    margin-bottom: 30px;
+}
+.blogs-page .blog-site .item{
+    width: 353px;
+    color: #000000;
+    margin-bottom: 66px;
+}
+.blogs-page .blog-site .item img{
+    border-radius: 10px;
+    width: 100%;
+    height: 296px;
+}
+.blogs-page .blog-site .item .description{
+    width: auto;
+}
+.blogs-page .blog-site .item .author {
+    margin-top: 17px !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 995px) {
+    .blogs-page .blog-site .item {
+        margin-bottom: 30px;
+        width: 50%;
+    }
+    .blogs-page .blog-site .item .author {
+        margin-top: 10px !important;
+    }
+    .blogs-page .shorting-section{
+        margin-bottom: 20px;
+    }
+    .blogs-page .blog-site .item img {
+        width: 100%;
+        height: auto;
+    }
+}
+/* blogs page */
+
+/* view-blog page */
+.blog-heading{
+    height: 520px;
+}
+.blog-heading .heading-content-box p, .blog-heading .heading-content-box p a{
+    font-family: 'Montserrat' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.blog-heading .heading-content-box h2{
+    width: 800px;
+
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+.blog-heading .heading-content-box .category-btn{
+    font-family: 'Montserrat' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
+
+    padding: 5px 15px;
+    width: 98px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 10px;
+    margin-bottom: 72px;
+}
+.blog-details .details-content-box{
+    width: 945px;
+
+    margin-top: -165px;
+    z-index: 1000;
+    position: relative;
+}
+.blog-details .details-content-box img{
+    width: 945px;
+    height: 500px;
+}
+.blog-details .details-content-box h3{
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 30px !important;
+}
+.blog-details .details-content-box p{
+    font-family: 'Montserrat' !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000 !important;
+}
+.view-blog {
+    color: #000000 !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 995px) {
+    .blog-heading{
+        height: 450px;
+    }
+    .blog-heading .heading-content-box h2{
+        width: auto;
+    }
+    .blog-heading .heading-content-box{
+        padding-top: 30px;
+    }
+    .blog-details{
+        margin: unset;
+    }
+    .blog-details .details-content-box {
+        width: fit-content !important;
+        margin-top: -165px;
+        z-index: 1000;
+        position: relative;
+    }
+    .blog-details .details-content-box img {
+        width: 100% !important;
+        height: auto;
+    }
+    .heading-content-box {
+        z-index: 999 !important;
+        position: relative;
+        color: white;
+        width: fit-content !important;
+    }
+
+    .blog-site .description{
+        width: auto;
+    }
+}
+/* view-blog page */
+
+/* contract page */
+.contract p{
+    font-family: 'Montserrat' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+/* contract page */
+
+/* 404 not found */
+.not-found-page{ 
+    height: 700px;
+}
+.not-found-page h1{
+    text-transform: uppercase;
+    font-family: 'Crucial' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #000000;
+    margin-top: 48px;
+    margin-bottom: 64px;
+}
+.not-found-page .sign-up-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Crucial' !important;
+    font-style: normal !important;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    width: 195px;
+    height: 51px;
+}
+@media only screen and (min-width: 320px) and (max-width: 995px) {
+    .not-found-page {
+        height: 500px !important;
+    }
+    .not-found-page img{
+        width: 100%;
+    }
+}
+/* 404 not found */
 /* ---------------------------------------------------------------------------------------------------- */
 
 /* media query */
@@ -2625,7 +2835,7 @@ textarea{
         width: auto !important;
         height: 40px !important;
         padding: 0px 10px;
-        margin: 1px !important;
+        margin: 3px !important;
         border-radius: 24px !important;
     }
     .shorting-section .dropdown-menu .dropdown-item {
