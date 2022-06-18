@@ -92,34 +92,6 @@
     -webkit-text-fill-color: white;
 }
 
-.menu {
-    padding: 0px;
-    gap: 40px;
-}
-
-.nav-links {
-    font-family: 'Crucial' !important;
-    font-style: normal;
-    font-weight: 500 !important;
-    text-transform: uppercase;
-    font-size: 15px;
-    line-height: 19px;
-    letter-spacing: 0.045em;
-    color: #000000;
-}
-
-.nav-logo {
-    width: 124px !important;
-    height: 39.83px !important;
-}
-.nav-links:hover{
-    background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%);
-    border-width: 1px;
-    border-image: linear-gradient(to right, #FF007D, #B627DC) 1 !important;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
 .sign-up-button{
     font-family: 'Crucial' !important;
     font-style: normal;
@@ -845,21 +817,6 @@ textarea{
     margin-right: 24px;
     border-radius: 24px;
 }
-.shorting-section .btn:hover, .dropdown .dropdown-item:hover{
-    /* background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%) !important;
-    border: 1px solid #ff007b70 !important;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: white;
-    background-clip: text; */
-}
-.shorting-section .btn:focus{
-    /* box-shadow: 0px 0px 0px 4px #ff007b40 !important;
-    background: linear-gradient(90deg, #FF007D 0%, #B627DC 100%) !important;
-    border: 1px solid #ff007b70 !important;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: white;
-    background-clip: text; */
-}
 .shorting-section .dropdown-menu {
     width: 100%;
     background-color: transparent;
@@ -868,12 +825,14 @@ textarea{
     background-color: transparent !important;
 }
 .shorting-section .dropdown-menu .dropdown-item{
+    font-family: 'Montserrat' !important;
     display: flex;
     align-items: center;
     transition-duration: 0.3s;
     height: 48px;
     border-radius: 24px;
     background-color: white;
+    color: #000000;
 }
 /* .shorting-section .dropdown-menu .dropdown-item:hover, .shorting-section .btn:hover{
     background-color: #212529 !important;
@@ -1372,11 +1331,7 @@ textarea{
 /* view artist */
 
 /* sign in page */
-@media screen and (min-width: 320px) and (max-width: 485px) {
-    .navbar{
-        width: fit-content !important;
-    }
-}
+
 @media screen and (min-width: 320px) and (max-width: 995px) {
     .form-left-side-container {
         height: auto !important;
@@ -1395,13 +1350,23 @@ textarea{
         margin-left: 0px !important;
         width: 100% !important;
     }
-    .form-section {
+    .sign-in-form-section {
         background-image: linear-gradient(90deg, #ffffff 60.3%, white 50%) !important;
+        height: auto !important;
+    }
+    .join-us-form-section {
+        background-image: linear-gradient(90deg, #ffffff 60.3%, white 50%) !important;
+        height: auto !important;
+    }
+    .sign-up-form-section {
+        background-image: linear-gradient(90deg, #ffffff 60.3%, white 50%) !important;
+        height: auto !important;
     }
 
     /* media-join-us */
     .join-us {
         background-image: linear-gradient(90deg, #ffffff 60.3%, white 50%) !important;
+        height: auto !important;
     }
 
     .join-us .form-left-side-container {
@@ -1416,17 +1381,37 @@ textarea{
     /* media-join-us */
 }
 .form-left-side-container{
-    background-color: #FF6DC5;
-    height: 930px;
+    opacity: 0;
+    background-image: url(images/bg/sign-in-bg.png);
+    height: 900px;
 }
 .form-right-side-container{
     background-color: #FFFFFF;
-    height: 930px;
+    height: 900px;
 }
-.form-section{
+.sign-in-form-section{
     width: 100%;
-    height: 930px;
-    background-image: linear-gradient(90deg, #FF6DC5 60.3%, white 50%);
+    height: 900px;
+    background-image: url(images/bg/sign-in-bg.png);
+    background-repeat: no-repeat;
+    background-size: 62%;
+    /* background-image: linear-gradient(90deg, #FF6DC5 60.3%, white 50%); */
+}
+.join-us-form-section{
+    width: 100%;
+    height: 900px;
+    background-image: url(images/bg/join-us-bg.png);
+    background-repeat: no-repeat;
+    background-size: 62%;
+    /* background-image: linear-gradient(90deg, #FF6DC5 60.3%, white 50%); */
+}
+.sign-up-form-section{
+    width: 100%;
+    height: 900px;
+    background-image: url(images/bg/sign-up-bg.png);
+    background-repeat: no-repeat;
+    background-size: 62%;
+    /* background-image: linear-gradient(90deg, #FF6DC5 60.3%, white 50%); */
 }
 .form-right-side{
     width: 308px;
@@ -2274,6 +2259,13 @@ textarea{
     margin-bottom: 64px;
 }
 
+.my-account .orders-table tbody tr td{
+    transition: 0.3s;
+}
+.my-account .orders-table tbody tr:hover td{
+    color: #000000e1 !important;
+    transition: 0.3s;
+}
 .my-account .orders-table thead tr th{
     font-family: 'Crucial' !important;
     font-style: normal;
@@ -2576,9 +2568,6 @@ textarea{
     }
 }
 @media only screen and (min-width: 995px) and (max-width: 2400px) {
-    .navbar {
-        height: 141px;
-    }
     .section2 .section2-container-1 {
         margin: 96px auto !important;
     }
@@ -2681,6 +2670,30 @@ textarea{
     }
 }
 @media only screen and (min-width: 360px) and (max-width: 995px) {
+    .product-section1 .hero-section{
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .product-section2 .about-section .description{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .view-artist .left-side{
+        padding-bottom: 20px;
+        height: auto;
+    }
+    .view-artist .left-side .card{
+        padding: 50px 0px 0px 0px;
+    }
+    .view-artist .left-side .card .artist-description p {
+        width: auto !important;
+    }
+    .my-account .profile-section{
+        width: auto;
+    }
+    .my-account .orders-section{
+        width: auto;
+    }
     /* home page */
     .section1 {
         background-image: url(images/frame.png);
@@ -2863,7 +2876,7 @@ textarea{
     }
 
     .product-section1 .art #main-image {
-        width: 100%;
+        width: 100% !important;
     }
 
     .product-section2 img{
