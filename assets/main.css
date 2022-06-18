@@ -2670,6 +2670,9 @@ textarea{
     }
 }
 @media only screen and (min-width: 360px) and (max-width: 995px) {
+    .about-section1 img, .about-section2 img{
+        height: auto;
+    }
     .product-section1 .hero-section{
         padding-right: 0px !important;
         padding-left: 0px !important;
